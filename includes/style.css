@@ -1,24 +1,100 @@
-body {
-    padding: 0;
-    margin: 0;
-   }
-   #wrapper {
-    width: 1000px;
-   }
-   * {
-    padding: 0px;
-    margin: 0px;
-   }
+* {padding: 0px; margin: 0px; font-family: 'Alef', sans-serif;}
 
-@media only screen and (max-width: 600px) {
-    body {
-    background-color: #cfd6da;
-    }
-    #wrapper{
+header, nav, aside, article, section, footer, main{
+    display: block;
+}
+
+.clear{
+    clear: both;
+}
+
+nav{
+    position: relative;
+    bottom: 16px;
     width: 100%;
-    }
-    tr :nth-child(4),
-    tr :nth-child(6) {
-    display: none;
-    }
+    height: 52px;
+    background-color: #62c462;
+}
+
+nav > ul > li{
+    float: right;
+    height: 52px;
+    width: 231px;
+    list-style-type: none;
+}
+
+nav > ul > li > a{
+    display: block;
+    color: #ffffff;
+    font-size: 20px;
+    height: 52px;
+    width: 231px;
+    padding-top: 10px;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+nav > ul > li > a:hover{
+    color: #ffffff;
+    text-decoration: none;
+
+}
+
+header > section:nth-child(1){
+    background-color: #dff0d8;
+    height: 100px;
+    padding-top: 10px;
+}
+
+header > section > form{
+    position: relative;
+    left: 80px;
+    bottom: 49px;
+    width: 211px;
+}
+
+header > section > form > ::-webkit-input-placeholder{
+    position: relative;
+    left: 135px;
+}
+
+#logo{
+    margin: 0px auto;   
+    display: block;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    width: 225px;
+    height: 73px;
+}
+
+#selected{
+    background-color: #a0db9d;
+    color: #777777;
+    font-weight: bold;
+}
+
+#t1{
+    font-family: 'Alef', sans-serif;
+}
+
+#clock{
+    position: relative;
+    color: #ffffff;
+    font-size: 18px;
+    width: 50px;
+    height: 21px;
+    bottom: 70px;
+    left: 80px;
+}
+
+#date{
+    position: relative;
+    color: #ffffff;
+    width: 100px;
+    height: 21px;
+    font-size: 18px;
+    left: 80px;
+    bottom: 65px;
+    margin-left: 0px;
 }

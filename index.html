@@ -3,56 +3,40 @@
     <head>
         
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
         integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
         <link rel="stylesheet" href="includes/style.css">
         <script src="includes/javascript.js"></script>
-        <title>Wheater Forecast</title>
+        <link href="https://fonts.googleapis.com/css?family=Alef" rel="stylesheet">
+        <title>Hisunit</title>
 
     </head>
     
     <body>
-        <div class = "container">
-                <header>
-                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                        <a class="navbar-brand" href="#">Edan</a>
-                        <button class="navbar-toggler" type="button" >
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
-                       
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                        <a class="nav-link" href="#">
-                        <i class="fa fa-home" ></i>Home
-                        <span class="sr-only">(current)</span>
-                        </a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#">
-                        <i class="fa fa-meetup" ></i>Features</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#">
-                        <i class="fa fa-link" ></i>Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#">
-                        <i class="fa fa-link" ></i>About</a>
-                        </li>
-                        </ul>
-                        <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" >
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                        </form>
-                        </div>
-                        </nav>
-                       </header>
+        <header>
+            <section>
+                <a id = "logo" href ="#"></a>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="...חיפוש" >
+                </form>        
+            </section>
+            <nav>
+                <ul>
+                    <li><a id = "selected" href = "#">לוח זמנים יומי</a></li>
+                    <li><a href = "#">ניהול פנקס מטופל</a></li>
+                    <li><a href = "#">ניהול מלאי חיסונים</a></li>
+                </ul>
+                <div class = "clear"></div>
+            </nav>
+            <div id = "clock"></div>
+            <div id = "date"></div>
 
-            <main>
+        </header>
+
+        <div class = "container">
+            <!-- <main>
                 <h1>Wheather Forecast System</h1>        
                 <p>Welcome to the system. Please choose a country you would like to get information about:</p>
                 <select id = "country"><option>All</option></select>
@@ -70,10 +54,10 @@
                     <tbody>
                     </tbody>
                 </table>
-            </main>
+            </main> -->
 
-            <footer></footer>     
-        
         </div>
+        <footer></footer>     
+        
     </body>
 </html>
