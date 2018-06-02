@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+        integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="includes/style.css">
+        <script src="includes/javascript.js"></script>
+        <title>Wheater Forecast</title>
+
+    </head>
+    
+    <body>
+        <div class = "container">
+                <header>
+                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                        <a class="navbar-brand" href="#">Edan</a>
+                        <button class="navbar-toggler" type="button" >
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                       
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                        <a class="nav-link" href="#">
+                        <i class="fa fa-home" ></i>Home
+                        <span class="sr-only">(current)</span>
+                        </a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">
+                        <i class="fa fa-meetup" ></i>Features</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">
+                        <i class="fa fa-link" ></i>Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">
+                        <i class="fa fa-link" ></i>About</a>
+                        </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" >
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                        </div>
+                        </nav>
+                       </header>
+
+            <main>
+                <h1>Wheather Forecast System</h1>        
+                <p>Welcome to the system. Please choose a country you would like to get information about:</p>
+                <select id = "country"><option>All</option></select>
+                <table class="table table-dark">
+                    <thead>
+                        <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Country</th>
+                        <th scope="col">City</th>
+                        <th scope="col">Temp(C)</th>
+                        <th scope="col">Temp(F)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </main>
+
+            <footer></footer>     
+        
+        </div>
+    </body>
+</html>
