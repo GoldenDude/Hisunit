@@ -98,3 +98,33 @@ header > section > form > ::-webkit-input-placeholder{
     bottom: 65px;
     margin-left: 0px;
 }
+
+.breadcrumb{
+    position: relative;
+    bottom: 55px;
+    float: right;
+    right: 40px;
+    background-color: #ffffff;
+}
+
+.breadcrumb-item{
+    float: right;
+
+}
+
+.breadcrumb-item > a{
+    color: #222222;
+    text-decoration-line: underline;
+}
+
+#currentPage{
+    font-weight: bold;
+    text-decoration-line: none;
+}
+
+.breadcrumb-left-arrow .breadcrumb-item+.breadcrumb-item::before {
+    content: "<";
+    vertical-align: middle;
+    font-size: 15px;
+    line-height: 15px;
+}
