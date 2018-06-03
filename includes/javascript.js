@@ -1,41 +1,47 @@
- window.onload = function startTime() {    
-        var today = new Date();
-        var currentDate  = new Date(),
-            currentDay = today.getDate() < 10 ? '0' + today.getDate(): today.getDate(),
-            currentMonth = today.getMonth() < 9 ? '0' + (today.getMonth() + 1): (today.getMonth() + 1);
+ window.onload = function(){
+    var json_data = [];
+    $.getJSON("data/MOCK_DATA.json", function (data) {
+        console.log(data);
+        json_data = data;
+        for (var row of data) {
+            var table_row = $(
+                '<tr>' +
+                '<td>' + row.treatment.t2 + '</td>' +
+                '<td>' + row.treatment.t1 + '</td>' +
+                '<td>' + row.age + '</td>' +
+                '<td>' + row.name + '</td>' +
+                '<td>' + row.hour + '</td>' +
+                '</tr>'
+            )
+            $("tbody").append(table_row);
+        }
+    })
 
-        var h = today.getHours();
-        var m = today.getMinutes();
-        var s = today.getSeconds();
-        m = checkTime(m);
-        s = checkTime(s);
-        document.getElementById("date").innerHTML = currentDay + '/' + currentMonth + '/' +  today.getFullYear();
-        document.getElementById("clock").innerHTML = h + ":" + m + ":" + s;
-        var t = setTimeout(startTime, 500);
+    startTime();    
 }
     
+function startTime() {    
+    var today = new Date();
+    var currentDate  = new Date(),
+        currentDay = today.getDate() < 10 ? '0' + today.getDate(): today.getDate(),
+        currentMonth = today.getMonth() < 9 ? '0' + (today.getMonth() + 1): (today.getMonth() + 1);
+
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById("date").innerHTML = currentDay + '/' + currentMonth + '/' +  today.getFullYear();
+    document.getElementById("clock").innerHTML = h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+
 function checkTime(i) {
     if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
     return i;
 }
-
-
+    
 // $(document).ready(function () {
-//     var json_data = []
-//     $.getJSON("data/MOCK_DATA.json", function (data) {
-//     console.log(data);
-//     json_data = data
-//     for (var row of data) {
-//     var table_row = $(
-//     '<tr>' +
-//     '<td>' + row.id + '</td>' +
-//     '<td>' + row.date + '</td>' +
-//     '<td>' + row.country + '</td>' +
-//     '<td>' + row.city + '</td>' +
-//     '<td>' + row.temp_c + '</td>' +
-//     '<td>' + row.temp_f + '</td>' +
-//     '</tr>'
-//     )
 //     var option = $(
 //     '<option>' + row.country + '</option>'
 //     )
