@@ -140,7 +140,7 @@ header > section > form > ::-webkit-input-placeholder{
 }
 
 #patientList .marked{
-    background-color: #f6fbf3;
+    background-color: #f5fbf3;
     height: 62px;   
     vertical-align: middle;
 }
@@ -160,4 +160,35 @@ header > section > form > ::-webkit-input-placeholder{
 #patientList table > tbody > tr > td{
     text-align: right;
     vertical-align: middle;
+}
+
+#patientList table > tbody > tr{
+    height: 62px;  
+}
+
+
+.fa-check-circle{
+    color: #62c462;
+    width: 24px;
+    height: 24px;
+}
+
+.fa-times-circle{
+    color: #b94a48;
+    width: 24px;
+    height: 24px;
+}
+
+.pDetail{
+    width: 93px;
+    height: 40px;
+    margin-top: 10px;
+    border: none;
+    background-color: #777777;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.bold{
+    font-weight: bold;
 }
