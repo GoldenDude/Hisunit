@@ -190,3 +190,28 @@ header > section > form > ::-webkit-input-placeholder{
 #patientList .bold{
     font-weight: bold;
 }
+
+
+
+
+/* ------------------Tipul------------------- */
+
+#tipul main > h1{
+    font-size: 24px;
+    position: relative;
+    width: 330px;
+    margin: 0px auto;
+    bottom: 100px;
+}
+
+#tipul .table thead th{
+    border: none;
+}
+
+#tipul .table td, .table th{
+    border-top: none;
+}
+
+#tipul td {
+    padding-top:0px;
+}
