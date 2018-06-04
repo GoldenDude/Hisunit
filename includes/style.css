@@ -139,65 +139,25 @@ header > section > form > ::-webkit-input-placeholder{
     bottom: 100px;
 }
 
-#patientList table{
-    margin: 0px auto;
+#patientList .marked{
+    background-color: #f6fbf3;
+    height: 62px;   
+    vertical-align: middle;
 }
 
-#patientList thead > tr > th{
-    height: 65px;
-    font-size: 18px;
-    float: right;
+#patientList .table thead th{
+    border: none;
+}
+
+#patientList .table td, .table th{
+    border-top: none;
+}
+
+#patientList table > thead > tr > th{
     text-align: right;
 }
 
-
-#patientList thead > tr > th:nth-child(1){
-    margin-left: 80px;
-}
-
-#patientList thead > tr > th:nth-child(2){
-    margin-left: 85px;
-}
-
-#patientList thead > tr > th:nth-child(3){
-    margin-left: 55px;
-}
-
-#patientList thead > tr > th:nth-child(4){
-    margin-left: 308px;
-}
-
-#patientList thead > tr > th:nth-child(5){
-    margin-left: 50px;
-}
-
-#patientList thead > tr > th:nth-child(6){
-    /* margin-left: 80px; */
-    width: 95px;
-    height: 40px;
-}
-
-#patientList td{
+#patientList table > tbody > tr > td{
     text-align: right;
-    font-size: 18px;
-}
-
-#patientList table > tbody > tr > td:nth-child(5){
-    margin-left: 80px;
-}
-
-#patientList table > tbody > tr > td:nth-child(4){
-    margin-left: 85px;
-}
-
-#patientList table > tbody > tr > td:nth-child(3){
-    margin-left: 55px;
-}
-
-#patientList table > tbody > tr > td:nth-child(2){
-    margin-left: 308px;
-}
-
-#patientList table > tbody > tr > td:nth-child(1){
-    margin-right: 50px;
+    vertical-align: middle;
 }

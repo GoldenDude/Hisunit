@@ -1,19 +1,44 @@
  window.onload = function(){
     var json_data = [];
+    var index = 0;
+
     $.getJSON("data/MOCK_DATA.json", function (data) {
         console.log(data);
         json_data = data;
         for (var row of data) {
-            var table_row = $(
-                '<tr>' +
-                '<td>' + row.treatment.t2 + '</td>' +
-                '<td>' + row.treatment.t1 + '</td>' +
-                '<td>' + row.age + '</td>' +
-                '<td>' + row.name + '</td>' +
-                '<td>' + row.hour + '</td>' +
-                '</tr>'
-            )
+            
+
+            if(index % 2){
+                var table_row = $(
+                    '<tr class = "marked">' +
+                        '<td>' + " <img src = 'images/X.png>' " + '</td>' +
+                        '<td>' + row.treatment.t1 + ", " + row.treatment.t2 + '</td>' +
+                        '<td>' + row.age + '</td>' +
+                        '<td>' + row.name + '</td>' +
+                        '<td>' + row.hour + '</td>' +
+                        '</tr>' 
+                )
+                ++index;
+            }
+
+            else{
+                var table_row = $(
+                    '<tr>' +
+                        '<td>' + " " + '</td>' +
+                        '<td>' + row.treatment.t1 + ", " + row.treatment.t2 + '</td>' +
+                        '<td>' + row.age + '</td>' +
+                        '<td>' + row.name + '</td>' +
+                        '<td>' + row.hour + '</td>' +
+                    '</tr>'
+                )
+                ++index;
+            }
+
+            var button = $('<button type="button" class = "pDetail">' + "פרטי טיפול" + '</button>');
+
+            table_row.prepend(button);
             $("tbody").append(table_row);
+
         }
     })
 
