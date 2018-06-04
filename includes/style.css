@@ -169,14 +169,12 @@ header > section > form > ::-webkit-input-placeholder{
 
 .fa-check-circle{
     color: #62c462;
-    width: 24px;
-    height: 24px;
+    font-size: 24px;
 }
 
 .fa-times-circle{
     color: #b94a48;
-    width: 24px;
-    height: 24px;
+    font-size: 24px;
 }
 
 .pDetail{
