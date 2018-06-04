@@ -27,7 +27,19 @@
 
                     notTreatedFound = 1; 
                 }
-
+                
+                else if (checkTreated){
+                    var table_row = $(
+                        '<tr class = "marked">' + 
+                        '<td>' + "<i class = 'fas fa-times-circle'></i> " + '</td>' +
+                        '<td>' + row.treatment.t1 + ", " + row.treatment.t2 + '</td>' +
+                        '<td>' + row.age + '</td>' +
+                        '<td>' + row.name + '</td>' +
+                        '<td>' + row.hour + '</td>' +
+                        '</tr>' 
+                        
+                    )
+                }
                 else{
                     
                     var table_row = $(
