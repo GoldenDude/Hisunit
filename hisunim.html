@@ -8,7 +8,7 @@
         integrity = "sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin = "anonymous">
         <link rel = "stylesheet" href = "https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity = "sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin = "anonymous">
         <link rel = "stylesheet" href = "includes/style.css">
-        <script src = "includes/javaIndex.js"></script>
+        <script src = "includes/javaHisunim.js"></script>
         <link href = "https://fonts.googleapis.com/css?family=Alef" rel = "stylesheet">
         <title>Hisunit</title>
 
@@ -24,9 +24,9 @@
             </section>
             <nav>
                 <ul>
-                    <li><a id = "selected" href = "#">לוח זמנים יומי</a></li>
+                    <li><a href = "index.html">לוח זמנים יומי</a></li>
                     <li><a href = "#">ניהול פנקס מטופל</a></li>
-                    <li><a href = "hisunim.html">ניהול מלאי חיסונים</a></li>
+                    <li><a id = "selected" href = "#">ניהול מלאי חיסונים</a></li>
                 </ul>
                 <div class = "clear"></div>
             </nav>
@@ -35,26 +35,26 @@
             <div id = "date"></div>
 
             <ol class = "breadcrumb breadcrumb-left-arrow">
-                <li id = "currentPage" class = "breadcrumb-item">לוח זמנים יומי</li>
-                <!-- <li class = "breadcrumb-item"><a href = "#">לוח זמנים יומי</a></li> -->
+                <li id = "currentPage" class = "breadcrumb-item">ניהול מלאי חיסונים</li>
+                <li class = "breadcrumb-item"> <a href = "index.html">לוח זמנים יומי</a></li>
             </ol>
 
             <div class = "clear"></div>
         </header>
 
-        <div id = "patientList" class = "container">
+        <div id = "hisunim" class = "container">
              <main>
-                <h1>לוח זמנים יומי - גב' איריס היימן</h1>        
+                <h1>ניהול מלאי חיסונים - כללית למטייל, רחובות</h1>        
 
                 <table class = "table">
                     <thead>
                         <tr>
-                            <th></th>
-                            <th scope="col">טופל</th>
-                            <th scope="col">פירוט</th>
-                            <th scope="col">גיל</th>
-                            <th scope="col">שם המטופל</th>
-                            <th scope="col">שעה</th>
+                            <th scope = "col">הערות</th>
+                            <th scope = "col">נבחר</th>
+                            <th scope = "col">מלאי מומלץ</th>
+                            <th scope = "col">מלאי נוכחי</th>
+                            <th scope = "col">שם החיסון</th>
+                            <th scope = "col">מספר סידורי</th>
                         </tr>
                     </thead>
 

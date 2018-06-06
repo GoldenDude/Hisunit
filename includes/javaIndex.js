@@ -5,7 +5,7 @@
 
 
 
-    $.getJSON("data/MOCK_DATA.json", function (data) {
+    $.getJSON("data/patients.json", function (data) {
         console.log(data);
         json_data = data;
         for (var row of data) {

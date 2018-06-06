@@ -353,3 +353,46 @@ header > section > form > ::-webkit-input-placeholder{
     from {top: -300px; opacity: 0}
     to {top: 0px; opacity: 1}
 }
+
+
+/* hisunim List */
+
+#hisunim main > h1{
+    font-size: 24px;
+    position: relative;
+    width: 450px;
+    margin: 0px auto;
+    bottom: 100px;
+    font-weight: bold;
+}
+
+#hisunim .table thead th{
+    border: none;
+}
+
+#hisunim .marked{
+    background-color: #f5fbf3;
+    height: 62px;   
+    vertical-align: middle;
+}
+
+#hisunim .table thead th{
+    border: none;
+}
+
+#hisunim .table td, .table th{
+    border-top: none;
+}
+
+#hisunim table > thead > tr > th{
+    text-align: right;
+}
+
+#hisunim table > tbody > tr > td{
+    text-align: right;
+    vertical-align: middle;
+}
+
+#hisunim table > tbody > tr{
+    height: 62px;  
+}
