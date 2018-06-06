@@ -12,9 +12,9 @@ window.onload = function(){
                 var table_row = $(
                     '<tr class = "marked">' + 
 
-                    '<td id = "checkbox">' + '</td>' +
+                    '<td>' + '</td>' +
                     '<td>' + row.recommendedStock + '</td>' +
-                    '<td class = "currentStock">' + row.currentStock + '</td>' +
+                    '<td class = "currentStock" data-color = "' + row.currentStock +'">' + row.currentStock + '</td>' +
                     '<td>' + row.name + '</td>' +
                     '<td>' + row.serial + '</td>' +
                     '</tr>' 
@@ -28,7 +28,7 @@ window.onload = function(){
                     '<tr>' + 
                     '<td>' + '</td>' +
                     '<td>' + row.recommendedStock + '</td>' +
-                    '<td data-color = ' + row.currentStock +'>' + row.currentStock + '</td>' +
+                    '<td class = "currentStock" data-color = "' + row.currentStock +'">' + row.currentStock + '</td>' +
                     '<td>' + row.name + '</td>' +
                     '<td>' + row.serial + '</td>' +
                     '</tr>' 
@@ -47,56 +47,40 @@ window.onload = function(){
         }
     }
     )
-
-    startTime();    
-
-    var colorMatch = {
-        '0-100'     : 'red',
-        '101-200'    : 'orange',
-        '201-350'   : 'green'
-     };
-
-     function between(x, min, max) {
-        return x >= min && x <= max;
-      }
-        
-      
-        
-        var dc;
-        var first; 
-        var second;
-        var th;
-        
-        $('p').each(function(index){
-          
-          th = $(this);
-          
-          dc = parseInt($(this).attr('data-color'),10);
-          
-          
-            $.each(mc, function(name, value){
-              
-              
-              first = parseInt(name.split('-')[0],10);
-              second = parseInt(name.split('-')[1],10);
-              
-              console.log(between(dc, first, second));
-              
-              if( between(dc, first, second) ){
-                th.addClass(value);
-              }
-      
-          
-          
-            });
-          
-        });
-}
     
+        fixColors();
+        startTime();    
+}
+
+function fixColors(){
+    
+    var elements = document.getElementsByClassName("currentStock");
+    console.log(elements.length);
+        
+    for (i = 0; i < elements.length; i++) {
+        
+
+        if (elements[i].getAttribute("data-color") >= 0 && elements[i].getAttribute(data-color) <= 100)
+            console.log("hey");
+            
+        if (elements[i].getAttribute("data-color") >= 100 && elements[i].getAttribute(data-color) <= 200)
+            console.log("hey");
+
+        if (elements[i].getAttribute("data-color") >= 200 && elements[i].getAttribute(data-color) <= 350)
+            console.log("hey");
+    
+        }
+
+        
+    
+}
+
+
+
 function startTime() {    
     var today = new Date();
     var currentDate  = new Date(),
-        currentDay = today.getDate() < 10 ? '0' + today.getDate(): today.getDate(),
+    currentDay = today.getDate() < 10 ? '0' + today.getDate(): today.getDate(),
         currentMonth = today.getMonth() < 9 ? '0' + (today.getMonth() + 1): (today.getMonth() + 1);
 
     var h = today.getHours();
