@@ -303,6 +303,7 @@ header > section > form > ::-webkit-input-placeholder{
     width: 80%; /* Could be more or less, depending on screen size */
 }
 
+
 /* The Close Button */
 #tipul .close {
     color: #aaa;
@@ -391,8 +392,31 @@ header > section > form > ::-webkit-input-placeholder{
 #hisunim table > tbody > tr > td{
     text-align: right;
     vertical-align: middle;
+    font-size: 18px;
 }
 
 #hisunim table > tbody > tr{
     height: 62px;  
+}
+
+#hisunim input[type = checkbox] {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 22px;
+    left: 142px;
+}
+
+#hisunim input[type = submit]{
+    width: 116px;
+    height: 45px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #62c462;
+    border-radius: 5px;
+    border: none;
+}
+
+#hisunim .currentStock[innerHTML = "300"]{
+    color: #46a546;
 }

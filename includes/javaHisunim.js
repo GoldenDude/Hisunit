@@ -11,10 +11,10 @@ window.onload = function(){
             if(index % 2){
                 var table_row = $(
                     '<tr class = "marked">' + 
-                    '<td>' + '</td>' +
+
                     '<td id = "checkbox">' + '</td>' +
                     '<td>' + row.recommendedStock + '</td>' +
-                    '<td>' + row.currentStock + '</td>' +
+                    '<td class = "currentStock">' + row.currentStock + '</td>' +
                     '<td>' + row.name + '</td>' +
                     '<td>' + row.serial + '</td>' +
                     '</tr>' 
@@ -27,9 +27,8 @@ window.onload = function(){
                 var table_row = $(
                     '<tr>' + 
                     '<td>' + '</td>' +
-                    '<td id = "checkbox">' + '</td>' +
                     '<td>' + row.recommendedStock + '</td>' +
-                    '<td>' + row.currentStock + '</td>' +
+                    '<td data-color = ' + row.currentStock +'>' + row.currentStock + '</td>' +
                     '<td>' + row.name + '</td>' +
                     '<td>' + row.serial + '</td>' +
                     '</tr>' 
@@ -37,24 +36,61 @@ window.onload = function(){
     
                 ++index;
             }
-
+            
             $("tbody").append(table_row);
             var inputSelect = document.createElement("input");
             inputSelect.type = "checkbox";
             inputSelect.name = "toOrder[]";
-            var checkBoxC = document.getElementById("checkbox");
-            checkBoxC.appendChild(inputSelect);
-        }
-
-
-            // var button = $('<button type="button" class = "pDetail">' + "פרטי טיפול" + '</button>');
-
-            // table_row.prepend(button);
+            inputSelect.value = row.name;
+            table_row.prepend(inputSelect);
 
         }
+    }
     )
 
     startTime();    
+
+    var colorMatch = {
+        '0-100'     : 'red',
+        '101-200'    : 'orange',
+        '201-350'   : 'green'
+     };
+
+     function between(x, min, max) {
+        return x >= min && x <= max;
+      }
+        
+      
+        
+        var dc;
+        var first; 
+        var second;
+        var th;
+        
+        $('p').each(function(index){
+          
+          th = $(this);
+          
+          dc = parseInt($(this).attr('data-color'),10);
+          
+          
+            $.each(mc, function(name, value){
+              
+              
+              first = parseInt(name.split('-')[0],10);
+              second = parseInt(name.split('-')[1],10);
+              
+              console.log(between(dc, first, second));
+              
+              if( between(dc, first, second) ){
+                th.addClass(value);
+              }
+      
+          
+          
+            });
+          
+        });
 }
     
 function startTime() {    
