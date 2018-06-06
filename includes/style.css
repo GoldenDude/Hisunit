@@ -199,19 +199,157 @@ header > section > form > ::-webkit-input-placeholder{
 #tipul main > h1{
     font-size: 24px;
     position: relative;
-    width: 330px;
+    width: 230px;
     margin: 0px auto;
-    bottom: 100px;
+    bottom: 50px;
+    font-weight: bold;
 }
 
-#tipul .table thead th{
-    border: none;
+#tipul main > h5{
+    font-size: 16px;
+    font-weight: bold;
 }
 
 #tipul .table td, .table th{
-    border-top: none;
+    padding: 0px;
+    width: 10px;
 }
 
 #tipul td {
     padding-top:0px;
+}
+
+#tipul main{
+    position: relative;
+    bottom: 50px;
+}
+
+#tipul .border-bottom{
+    border-bottom:1px solid #e9ecef;
+}
+
+.table {
+    max-width: 800px;
+    margin: 0px auto;
+}
+
+#tipul h4{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+#tipul label{
+    font-size: 24px;
+    position: relative;
+}
+
+#tipul .inputSize{
+    height: 30px; 
+}
+
+#tipul h3{
+    color: #46a546;
+    font-size: 18px;
+}
+
+/* #tipul .floatRight {
+    position: relative;
+    float: right;
+} */
+
+#tipul .submit {
+    background-color: #62c462;
+    border: none;
+    width: 144px;
+    height: 45px;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+#tipul .back {
+    background-color: #555555;
+    border: none;
+    width: 144px;
+    height: 45px;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+#tipul .container{
+    margin: 0px auto;
+    max-width: 1000px;
+}
+
+
+.lightBox {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.lightBox-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Modal Header */
+.lightBox-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* Modal Body */
+.lightBox-body {padding: 2px 16px;}
+
+/* Modal Footer */
+.lightBox-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* Modal Content */
+.lightBox-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0px; opacity: 1}
 }
