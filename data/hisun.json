@@ -1,9 +1,16 @@
 [
+    {"serial": "EC-1213", "name": "אי-קולי", "currentStock": "10", "recommendedStock": "350"},
+    {"serial": "TF-9835", "name": "שפעת", "currentStock": "203", "recommendedStock": "350"},
+    {"serial": "HB-2480", "name": "צהבת אי", "currentStock": "99", "recommendedStock": "350"},
+    {"serial": "MR-5389", "name": "צהבת בי", "currentStock": "101", "recommendedStock": "350"},
+    {"serial": "HU-8096", "name": "קדחת צהובה", "currentStock": "79", "recommendedStock": "350"},
+    {"serial": "TK-6213", "name": "פוליו", "currentStock": "196", "recommendedStock": "350"},
+    {"serial": "LY-2778", "name": "גחלת", "currentStock": "102", "recommendedStock": "350"},
     {"serial": "EC-1213", "name": "Tetanus", "currentStock": "300", "recommendedStock": "350"},
-    {"serial": "EC-1213", "name": "שפעת", "currentStock": "300", "recommendedStock": "350"},
-    {"serial": "EC-1213", "name": "Tetanus", "currentStock": "300", "recommendedStock": "350"},
-    {"serial": "EC-1213", "name": "Tetanus", "currentStock": "300", "recommendedStock": "350"},
-    {"serial": "EC-1213", "name": "שפעת", "currentStock": "300", "recommendedStock": "350"},
-    {"serial": "EC-1213", "name": "Tetanus", "currentStock": "300", "recommendedStock": "350"},
-    {"serial": "EC-1213", "name": "Tetanus", "currentStock": "300", "recommendedStock": "350"}
+    {"serial": "TF-9835", "name": "שפעת", "currentStock": "203", "recommendedStock": "350"},
+    {"serial": "HB-2480", "name": "צהבת אי", "currentStock": "99", "recommendedStock": "350"},
+    {"serial": "MR-5389", "name": "צהבת בי", "currentStock": "101", "recommendedStock": "350"},
+    {"serial": "HU-8096", "name": "קדחת צהובה", "currentStock": "79", "recommendedStock": "350"},
+    {"serial": "TK-6213", "name": "פוליו", "currentStock": "196", "recommendedStock": "350"},
+    {"serial": "LY-2778", "name": "גחלת", "currentStock": "102", "recommendedStock": "350"}
 ]

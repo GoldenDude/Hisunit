@@ -410,11 +410,8 @@ header > section > form > ::-webkit-input-placeholder{
     background-color: #62c462;
     border-radius: 5px;
     border: none;
-}
-
-<<<<<<< HEAD
-#hisunim .currentStock[innerHTML = "300"]{
-    color: #46a546;
+    position: fixed;
+    bottom: 10px;
 }
 
 
@@ -510,9 +507,7 @@ header > section > form > ::-webkit-input-placeholder{
 }
 
 
-=======
 
-.red {color:red}
-.orange {color:orange}
-.green {color:green}
->>>>>>> f1db71aaf687b25c5f461acc8832b96262434135
+.red {color: #bd362f}
+.yellow {color: #ffc40d}
+.green {color: #46a546}

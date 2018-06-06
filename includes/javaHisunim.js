@@ -13,10 +13,10 @@ window.onload = function(){
                     '<tr class = "marked">' + 
                     '<td>' + '</td>' +
                     '<td>' + row.recommendedStock + '</td>' +
-                    '<td class = "currentStock" data-color = "' + row.currentStock +'">' + row.currentStock + '</td>' +
+                    '<td class = "currentStock" data-color = ' + row.currentStock + '>' + row.currentStock + '</td>' +
                     '<td>' + row.name + '</td>' +
                     '<td>' + row.serial + '</td>' +
-                    '</tr>' 
+                    '</tr>'  
                 
                 ) 
                 ++index;
@@ -27,7 +27,7 @@ window.onload = function(){
                     '<tr>' + 
                     '<td>' + '</td>' +
                     '<td>' + row.recommendedStock + '</td>' +
-                    '<td class = "currentStock" data-color = "' + row.currentStock + '">' + row.currentStock + '</td>' +
+                    '<td class = "currentStock" data-color = ' + row.currentStock + '>' + row.currentStock + '</td>' +
                     '<td>' + row.name + '</td>' +
                     '<td>' + row.serial + '</td>' +
                     '</tr>' 
@@ -40,42 +40,30 @@ window.onload = function(){
             var inputSelect = document.createElement("input");
             inputSelect.type = "checkbox";
             inputSelect.name = "toOrder[]";
-            inputSelect.id = "bah";
             inputSelect.value = row.name;
             table_row.prepend(inputSelect);
 
         }
+        var elements = document.getElementsByClassName("currentStock");
+                    
+        for (i = 0; i < elements.length;) {
+            var check = parseInt(elements[i].getAttribute("data-color"));
+            
+            if (check >= 0 && check <= 100)
+                elements[i].className = "red";
+            
+            if (check > 100 && check <= 200)
+                elements[i].className = "yellow";
+            
+            if (check > 200 && check <= 350)
+                elements[i].className = "green";
+            
+        }
     }
     )
 
-    fixColors();
     startTime();    
 }
-
-function fixColors(){
-    
-    var elements = document.getElementById("bah");
-    
-    console.log(elements.length);
-    
-    for (i = 0; i < elements.length; i++) {
-        
-        
-        if (elements[i].getAttribute("data-color") >= 0 && elements[i].getAttribute(data-color) <= 100)
-        console.log("hey");
-        
-        if (elements[i].getAttribute("data-color") >= 100 && elements[i].getAttribute(data-color) <= 200)
-        console.log("hey");
-        
-        if (elements[i].getAttribute("data-color") >= 200 && elements[i].getAttribute(data-color) <= 350)
-        console.log("hey");
-        
-    }
-    
-    
-    
-}
-
 
 function startTime() {    
     var today = new Date();
