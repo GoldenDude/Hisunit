@@ -252,11 +252,6 @@ header > section > form > ::-webkit-input-placeholder{
     font-size: 18px;
 }
 
-/* #tipul .floatRight {
-    position: relative;
-    float: right;
-} */
-
 #tipul .submit {
     background-color: #62c462;
     border: none;
@@ -304,7 +299,7 @@ header > section > form > ::-webkit-input-placeholder{
 }
 
 
-/* The Close Button */
+
 #tipul .close {
     color: #aaa;
     float: right;
@@ -319,24 +314,24 @@ header > section > form > ::-webkit-input-placeholder{
     cursor: pointer;
 }
 
-/* Modal Header */
+
 #tipul .lightBox-header {
     padding: 2px 16px;
     background-color: #5cb85c;
     color: white;
 }
 
-/* Modal Body */
+
 #tipul .lightBox-body {padding: 2px 16px;}
 
-/* Modal Footer */
+
 #tipul .lightBox-footer {
     padding: 2px 16px;
     background-color: #5cb85c;
     color: white;
 }
 
-/* Modal Content */
+
 #tipul .lightBox-content {
     position: relative;
     background-color: #fefefe;
@@ -349,7 +344,7 @@ header > section > form > ::-webkit-input-placeholder{
     animation-duration: 0.4s
 }
 
-/* Add Animation */
+
 @keyframes animatetop {
     from {top: -300px; opacity: 0}
     to {top: 0px; opacity: 1}
@@ -417,7 +412,107 @@ header > section > form > ::-webkit-input-placeholder{
     border: none;
 }
 
+<<<<<<< HEAD
+#hisunim .currentStock[innerHTML = "300"]{
+    color: #46a546;
+}
+
+
+#confirm .checkButton{
+    width: 81px;
+    height: 81px;
+    display: block;
+    margin: 0px auto;
+    position: relative;
+    bottom: 100px;
+}
+
+#confirm main > h1{
+    font-size: 42px;
+    position: relative;
+    width: 450px;
+    margin: 0px auto;
+    bottom: 100px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#confirm main > h5 {
+    font-size: 16px;
+    position: relative;
+    bottom: 100px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#confirm main > h2 {
+    font-size: 24px;
+    position: relative;
+    bottom: 100px;
+    text-align: right;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+#confirm main > h4{
+    font-size: 25px;
+    position: relative;
+    bottom: 100px;
+    text-align: right;
+    padding-top: 10px;
+}
+
+
+#confirm .marked{
+    background-color: #f5fbf3;
+    height: 62px;   
+    vertical-align: middle;
+}
+
+#confirm .table thead th{
+    border: none;
+}
+
+#confirm .table td, .table th{
+    border-top: none;
+}
+
+#confirm  table > thead > tr > th{
+    text-align: right;
+}
+
+#confirm  table > tbody > tr > td{
+    text-align: right;
+    vertical-align: middle;
+}
+
+#confirm table > tbody > tr{
+    height: 62px;  
+}
+
+#confirm .submit {
+    background-color: #62c462;
+    border: none;
+    width: 144px;
+    height: 45px;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+#confirm .back {
+    background-color: #555555;
+    border: none;
+    width: 144px;
+    height: 45px;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+
+=======
 
 .red {color:red}
 .orange {color:orange}
 .green {color:green}
+>>>>>>> f1db71aaf687b25c5f461acc8832b96262434135
