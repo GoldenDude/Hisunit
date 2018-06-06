@@ -14,7 +14,7 @@ window.onload = function(){
 
                     '<td>' + '</td>' +
                     '<td>' + row.recommendedStock + '</td>' +
-                    '<td class = "currentStock">' + row.currentStock + '</td>' +
+                    '<td class = "currentStock" data-color = "' + row.currentStock +'">' + row.currentStock + '</td>' +
                     '<td>' + row.name + '</td>' +
                     '<td>' + row.serial + '</td>' +
                     '</tr>' 
@@ -28,7 +28,7 @@ window.onload = function(){
                     '<tr>' + 
                     '<td>' + '</td>' +
                     '<td>' + row.recommendedStock + '</td>' +
-                    '<td class = "currentStock" data-color = ' + row.currentStock +'>' + row.currentStock + '</td>' +
+                    '<td class = "currentStock" data-color = "' + row.currentStock +'">' + row.currentStock + '</td>' +
                     '<td>' + row.name + '</td>' +
                     '<td>' + row.serial + '</td>' +
                     '</tr>' 
