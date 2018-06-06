@@ -11,7 +11,6 @@ window.onload = function(){
             if(index % 2){
                 var table_row = $(
                     '<tr class = "marked">' + 
-
                     '<td>' + '</td>' +
                     '<td>' + row.recommendedStock + '</td>' +
                     '<td class = "currentStock" data-color = "' + row.currentStock +'">' + row.currentStock + '</td>' +
@@ -28,7 +27,7 @@ window.onload = function(){
                     '<tr>' + 
                     '<td>' + '</td>' +
                     '<td>' + row.recommendedStock + '</td>' +
-                    '<td class = "currentStock" data-color = "' + row.currentStock +'">' + row.currentStock + '</td>' +
+                    '<td class = "currentStock" data-color = "' + row.currentStock + '">' + row.currentStock + '</td>' +
                     '<td>' + row.name + '</td>' +
                     '<td>' + row.serial + '</td>' +
                     '</tr>' 
@@ -41,40 +40,41 @@ window.onload = function(){
             var inputSelect = document.createElement("input");
             inputSelect.type = "checkbox";
             inputSelect.name = "toOrder[]";
+            inputSelect.id = "bah";
             inputSelect.value = row.name;
             table_row.prepend(inputSelect);
 
         }
     }
     )
-    
-        fixColors();
-        startTime();    
+
+    fixColors();
+    startTime();    
 }
 
 function fixColors(){
     
-    var elements = document.getElementsByClassName("currentStock");
+    var elements = document.getElementById("bah");
+    
     console.log(elements.length);
-        
+    
     for (i = 0; i < elements.length; i++) {
         
-
-        if (elements[i].getAttribute("data-color") >= 0 && elements[i].getAttribute(data-color) <= 100)
-            console.log("hey");
-            
-        if (elements[i].getAttribute("data-color") >= 100 && elements[i].getAttribute(data-color) <= 200)
-            console.log("hey");
-
-        if (elements[i].getAttribute("data-color") >= 200 && elements[i].getAttribute(data-color) <= 350)
-            console.log("hey");
-    
-        }
-
         
+        if (elements[i].getAttribute("data-color") >= 0 && elements[i].getAttribute(data-color) <= 100)
+        console.log("hey");
+        
+        if (elements[i].getAttribute("data-color") >= 100 && elements[i].getAttribute(data-color) <= 200)
+        console.log("hey");
+        
+        if (elements[i].getAttribute("data-color") >= 200 && elements[i].getAttribute(data-color) <= 350)
+        console.log("hey");
+        
+    }
+    
+    
     
 }
-
 
 
 function startTime() {    
