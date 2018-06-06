@@ -1,7 +1,9 @@
 window.onload = function(){
-    startTime();  
+
     var print = document.getElementById("print");
 
+    startTime();  
+    
     print.onclick = function() {
         window.print();
     }
@@ -13,6 +15,15 @@ function startTime() {
         currentDay = today.getDate() < 10 ? '0' + today.getDate(): today.getDate(),
         currentMonth = today.getMonth() < 9 ? '0' + (today.getMonth() + 1): (today.getMonth() + 1);
 
+    var weekday = new Array(7);
+    weekday[0] =  "ראשון";
+    weekday[1] = "שני";
+    weekday[2] = "שלישי";
+    weekday[3] = "רביעי";
+    weekday[4] = "חמישי";
+    weekday[5] = "שישי";
+    weekday[6] = "שבת";
+
     var h = today.getHours();
     var m = today.getMinutes();
     var s = today.getSeconds();
@@ -20,7 +31,7 @@ function startTime() {
     s = checkTime(s);
     document.getElementById("date").innerHTML = currentDay + '/' + currentMonth + '/' +  today.getFullYear();
     document.getElementById("clock").innerHTML = h + ":" + m + ":" + s;
-    document.getElementById("date2").innerHTML = currentDay + '/' + currentMonth + '/' +  today.getFullYear();
+    document.getElementById("date2").innerHTML = currentDay + '/' + currentMonth + '/' +  today.getFullYear() + "  " + weekday[today.getDay()];
     var t = setTimeout(startTime, 500);
 }
 

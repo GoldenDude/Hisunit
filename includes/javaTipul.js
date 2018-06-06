@@ -1,26 +1,43 @@
 window.onload = function(){
 startTime();  
 
-var box = document.getElementById('lightBox');
+var modal = document.getElementById('lightBox');
 var btn = document.getElementById("sub");
 var span = document.getElementsByClassName("close")[0];
+var disable = document.getElementsByTagName("input");
+
 
 btn.onclick = function() {
-    box.style.display = "block";
-}
-span.onclick = function() {
-    box.style.display = "none";
-}
-window.onclick = function(event) {
-    if (event.target == box) {
-        box.style.display = "none";
+    modal.style.display = "block";
+    for (i=0; i < disable.length - 2; i++ ){
+        disable[i].disabled = true;
     }
-}
-
-
-// plus.onclick = function() {clicked()}
-}
     
+}
+
+span.onclick = function() {
+    modal.style.display = "none";
+    delay(3000);
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+        for (i=0; i < disable.length - 2; i++ ){
+            disable[i].disabled = false;
+        }
+    }
+}}
+ 
+function delay(ms){
+        var start = new Date().getTime();
+        var end = start;
+        while(end < start + ms) {
+          end = new Date().getTime();  
+        }
+        return true;
+}
+
 function startTime() {    
     var today = new Date();
     var currentDate  = new Date(),

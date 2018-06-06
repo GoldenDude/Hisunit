@@ -259,6 +259,8 @@ header > section > form > ::-webkit-input-placeholder{
     height: 45px;
     color: #ffffff;
     border-radius: 5px;
+    position: fixed;
+    bottom:5px;
 }
 
 #tipul .back {
@@ -268,6 +270,9 @@ header > section > form > ::-webkit-input-placeholder{
     height: 45px;
     color: #ffffff;
     border-radius: 5px;
+    position: fixed;
+    bottom:5px;
+    right: 10%;
 }
 
 #tipul .container{
@@ -277,25 +282,25 @@ header > section > form > ::-webkit-input-placeholder{
 
 
 #tipul .lightBox {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none;
+    position: fixed; 
+    z-index: 1; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
 }
 
-/* Modal Content/Box */
+
 #tipul .lightBox-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto; 
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 80%; 
 }
 
 
@@ -314,6 +319,15 @@ header > section > form > ::-webkit-input-placeholder{
     cursor: pointer;
 }
 
+#tipul .right {
+    position: relative;
+    left:400px;
+}
+
+#tipul .input-group{
+    width: 570px;
+    margin: 0px;
+}
 
 #tipul .lightBox-header {
     padding: 2px 16px;
@@ -344,12 +358,10 @@ header > section > form > ::-webkit-input-placeholder{
     animation-duration: 0.4s
 }
 
-
 @keyframes animatetop {
     from {top: -300px; opacity: 0}
     to {top: 0px; opacity: 1}
 }
-
 
 /* hisunim List */
 
@@ -412,11 +424,17 @@ header > section > form > ::-webkit-input-placeholder{
     border: none;
 }
 
-<<<<<<< HEAD
 #hisunim .currentStock[innerHTML = "300"]{
     color: #46a546;
 }
 
+
+/*-----------------Confirm---------------*/
+
+#confirm .container{
+    margin: 0px auto;
+    max-width: 1000px;
+}
 
 #confirm .checkButton{
     width: 81px;
@@ -463,11 +481,24 @@ header > section > form > ::-webkit-input-placeholder{
     padding-top: 10px;
 }
 
+#confirm main > h3{
+    font-size: 18px;
+    position: relative;
+    bottom: 100px;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bold;
+}
 
 #confirm .marked{
     background-color: #f5fbf3;
     height: 62px;   
     vertical-align: middle;
+}
+
+#confirm .table{
+    position: relative;
+    bottom: 100px;
 }
 
 #confirm .table thead th{
@@ -498,6 +529,8 @@ header > section > form > ::-webkit-input-placeholder{
     height: 45px;
     color: #ffffff;
     border-radius: 5px;
+    position: fixed;
+    bottom: 5px;
 }
 
 #confirm .back {
@@ -507,12 +540,13 @@ header > section > form > ::-webkit-input-placeholder{
     height: 45px;
     color: #ffffff;
     border-radius: 5px;
+    position: fixed;
+    bottom: 5px;
+    right:10%;
 }
 
 
-=======
 
 .red {color:red}
 .orange {color:orange}
 .green {color:green}
->>>>>>> f1db71aaf687b25c5f461acc8832b96262434135

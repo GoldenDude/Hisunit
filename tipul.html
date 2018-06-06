@@ -3,9 +3,10 @@
     <head>
         
         <meta charset="UTF-8">
-        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
-        integrity = "sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin = "anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
         <link rel = "stylesheet" href = "https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity = "sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin = "anonymous">
         <link rel = "stylesheet" href = "includes/style.css">
         <script src = "includes/javaTipul.js"></script>
@@ -31,6 +32,44 @@
                 </ul>
                 <div class = "clear"></div>
             </nav>
+
+            
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link disabled" href="#">Disabled</a>
+                        </li>
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </nav>
+
 
             <div id = "clock"></div>
             <div id = "date"></div>
@@ -86,21 +125,21 @@
                             <td class="border-bottom border-top-0 text-center">טלפון נוסף</td>
                             <td class="border-bottom border-top-0 text-center">טלפון</td>
                             <td class="border-bottom border-top-0 text-center">מספר בית</td>
-                            <td class="border-bottom border-top-0 text-center">הרצל</td>
+                            <td class="border-bottom border-top-0 text-center">רחוב</td>
                             <td class="border-bottom border-top-0 text-center">ישוב</td>
                           </tr>
                         </tbody>
                     </table>
                     <h4 class="mr-5 mt-4 text-right">פרטי הטיפול</h4>
                     <form name="vaccineForm" method="GET">
-                        <div id="content-container" class="input-group mb-3">
-                            <input type="text" class="inputSize mt-3 col-4  text-right form-control" placeholder="...סרוק/י ברקוד" aria-label="...סרוק/י ברקוד" aria-describedby="basic-addon2">
+                        <div class="right input-group mb-3">
+                            <input type="text" class="Right inputSize mt-3 col-4  text-right form-control" placeholder="...סרוק/י ברקוד" aria-label="...סרוק/י ברקוד" aria-describedby="basic-addon2">
                                 <div class="input-group-append">
                                     <i class="pt-3 mr-5 ml-3 fas fa-barcode fa-2x"></i>
                                 </div>
-                            <label class="mr-5 mt-2 text-right">אי-קולי</label>
+                            <label class="mt-2 text-right">אי-קולי</label>
                         </div>
-                        <div class="input-group mb-3">
+                        <div class="right input-group mb-3">
                                 <input type="text" class="inputSize mt-3 col-4  text-right form-control" placeholder="...סרוק/י ברקוד" aria-label="...סרוק/י ברקוד" aria-describedby="basic-addon2">
                                     <div class="input-group-append">
                                         <i class="pt-3 mr-5 ml-3 fas fa-barcode fa-2x"></i>
@@ -109,31 +148,31 @@
                             </div>
                         <p id="add" class="mr-5 mt-3 text-right">הוסף חיסון נוסף &#10010;</p>
                     </form>
-                    <h3 class="mr-5 text-right">המצלת המערכת</h3>
-                    <form name="exstraForm" method="GET">
-                        <div class="input-group mb-3">
+                    <h3 class="mr-5 text-right">המלצת המערכת</h3>
+                    <form action="index2.html" name="exstraForm" method="GET" onsubmit="return delay(0)">
+                        <div class="right input-group mb-3">
                             <input type="text" class="inputSize mt-3 col-4  text-right form-control" placeholder="...סרוק/י ברקוד" aria-label="...סרוק/י ברקוד" aria-describedby="basic-addon2">
                                 <div class="input-group-append">
                                     <i class="pt-3 mr-5 ml-3 fas fa-barcode fa-2x"></i>
                                 </div>
-                            <label class="mr-5 mt-2 text-right">שפעת</label>
+                            <label class="mt-2 text-right">שפעת</label>
                         </div>
                         <input type="submit" id="sub" class="submit" value="סיים טיפול">
                         <button class="back float-right">חזור</button>
                         </form>
                         <div id="lightBox" class="lightBox">   
-                                <div class="lightBox-content">
-                                        <div class="lightBox-header">
-                                          <span class="close">&times;</span>
-                                          <h2 class="text-right">הודעת מערכת</h2>
-                                        </div>
-                                        <div class="lightBox-body">
-                                          <p class="text-center">נתונים נשמרו בהצלחה</p>
-                                        </div>
-                                        <div class="lightBox-footer">
-                                          <h3></h3>
-                                        </div>
-                                      </div>
+                            <div class="lightBox-content">
+                                    <div class="lightBox-header">
+                                        <span class="close">&times;</span>
+                                        <h2 class="text-right">הודעת מערכת</h2>
+                                    </div>
+                                    <div class="lightBox-body">
+                                        <p class="text-center">נתונים נשמרו בהצלחה</p>
+                                    </div>
+                                    <div class="lightBox-footer">
+                                        <h3></h3>
+                                    </div>
+                            </div>
                          </div>
 
                       
