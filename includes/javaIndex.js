@@ -29,34 +29,32 @@
                 }
                 
                 else if (checkTreated){
-                    var table_row = $(
-                        '<tr class = "marked">' + 
-                        '<td>' + "<i class = 'fas fa-times-circle'></i> " + '</td>' +
-                        '<td>' + row.treatment.t1 + ", " + row.treatment.t2 + '</td>' +
-                        '<td>' + row.age + '</td>' +
-                        '<td>' + row.name + '</td>' +
-                        '<td>' + row.hour + '</td>' +
-                        '</tr>' 
+                        var table_row = $(
+                            '<tr class = "marked">' + 
+                            '<td>' + "<i class = 'fas fa-times-circle'></i> " + '</td>' +
+                            '<td>' + row.treatment.t1 + ", " + row.treatment.t2 + '</td>' +
+                            '<td>' + row.age + '</td>' +
+                            '<td>' + row.name + '</td>' +
+                            '<td>' + row.hour + '</td>' +
+                            '</tr>' 
                         
-                    )
-                }
-                else{
+                        )
+                    }
+                    else{
                     
-                    var table_row = $(
-                        '<tr class = "marked">' + 
-                        '<td>' + "<i class = 'fas fa-check-circle'></i> " + '</td>' +
-                        '<td>' + row.treatment.t1 + ", " + row.treatment.t2 + '</td>' +
-                        '<td>' + row.age + '</td>' +
-                        '<td>' + row.name + '</td>' +
-                        '<td>' + row.hour + '</td>' +
-                        '</tr>' 
-                    )
-                }
+                        var table_row = $(
+                            '<tr>' + 
+                            '<td>' + "<i class = 'fas fa-check-circle'></i> " + '</td>' +
+                            '<td>' + row.treatment.t1 + ", " + row.treatment.t2 + '</td>' +
+                            '<td>' + row.age + '</td>' +
+                            '<td>' + row.name + '</td>' +
+                            '<td>' + row.hour + '</td>' +
+                            '</tr>' 
+                            
+                        )
 
-                
-                
-                ++index;
-            }
+                    }
+                }
 
             else{
 
@@ -90,13 +88,13 @@
                 ++index;
             }
 
-            var button = $('<button type="button" class = "pDetail">' + "פרטי טיפול" + '</button>');
+            var button = $('<a href = "tipul.html"> <button target = "tipul.html" type="button" class = "pDetail"> פרטי טיפול </button></a>' );
 
             $("tbody").append(table_row);
             table_row.prepend(button);
 
         }
-    })
+     })
 
     startTime();    
 }

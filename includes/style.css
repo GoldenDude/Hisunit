@@ -1,6 +1,6 @@
 * {padding: 0px; margin: 0px; font-family: 'Alef', sans-serif;}
 
-header, nav, aside, article, section, footer, main{
+header, aside, article, section, footer, main{
     display: block;
 }
 
@@ -8,7 +8,24 @@ header, nav, aside, article, section, footer, main{
     clear: both;
 }
 
-nav{
+body > header > section > h5{
+    float: right;
+    width: auto;
+    padding-top: 25px;
+    padding-right: 10px;
+    height: 25px;
+    font-size: 18px;
+}
+
+#user{
+    background-image: url(../images/iris.png);
+    background-repeat: no-repeat;  
+    margin-right: 25px; 
+    width: 55px;
+    height: 70px;
+    float: right;
+}
+.navbar{
     position: relative;
     bottom: 16px;
     width: 100%;
@@ -16,14 +33,13 @@ nav{
     background-color: #62c462;
 }
 
-nav > ul > li{
-    float: right;
+.nav-item{
     height: 52px;
     width: 231px;
     list-style-type: none;
 }
 
-nav > ul > li > a{
+.nav-link{
     display: block;
     color: #ffffff;
     font-size: 20px;
@@ -32,10 +48,9 @@ nav > ul > li > a{
     padding-top: 10px;
     text-decoration: none;
     text-align: center;
-    
 }
 
-nav > ul > li > a:hover{
+.nav-link:hover{
     color: #ffffff;
     text-decoration: none;
 
@@ -422,10 +437,15 @@ header > section > form > ::-webkit-input-placeholder{
     background-color: #62c462;
     border-radius: 5px;
     border: none;
+<<<<<<< HEAD
 }
 
 #hisunim .currentStock[innerHTML = "300"]{
     color: #46a546;
+=======
+    position: fixed;
+    bottom: 10px;
+>>>>>>> 4cba1eebd30e68c1f893a245a712fadbc3110a58
 }
 
 
@@ -547,6 +567,12 @@ header > section > form > ::-webkit-input-placeholder{
 
 
 
+<<<<<<< HEAD
 .red {color:red}
 .orange {color:orange}
 .green {color:green}
+=======
+.red {color: #bd362f}
+.yellow {color: #ffc40d}
+.green {color: #46a546}
+>>>>>>> 4cba1eebd30e68c1f893a245a712fadbc3110a58
