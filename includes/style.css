@@ -167,17 +167,17 @@ header > section > form > ::-webkit-input-placeholder{
 }
 
 
-.fa-check-circle{
+#patientList .fa-check-circle{
     color: #62c462;
     font-size: 24px;
 }
 
-.fa-times-circle{
+#patientList .fa-times-circle{
     color: #b94a48;
     font-size: 24px;
 }
 
-.pDetail{
+#patientList .pDetail{
     width: 93px;
     height: 40px;
     margin-top: 10px;
@@ -187,7 +187,7 @@ header > section > form > ::-webkit-input-placeholder{
     border-radius: 5px;
 }
 
-.bold{
+#patientList .bold{
     font-weight: bold;
 }
 
