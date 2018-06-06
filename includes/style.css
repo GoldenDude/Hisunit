@@ -417,6 +417,7 @@ header > section > form > ::-webkit-input-placeholder{
     border: none;
 }
 
-#hisunim .currentStock[innerHTML = "300"]{
-    color: #46a546;
-}
+
+.red {color:red}
+.orange {color:orange}
+.green {color:green}
