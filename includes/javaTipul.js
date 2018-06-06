@@ -1,19 +1,19 @@
 window.onload = function(){
 startTime();  
 
-var modal = document.getElementById('lightBox');
+var box = document.getElementById('lightBox');
 var btn = document.getElementById("sub");
 var span = document.getElementsByClassName("close")[0];
 
 btn.onclick = function() {
-    modal.style.display = "block";
+    box.style.display = "block";
 }
 span.onclick = function() {
-    modal.style.display = "none";
+    box.style.display = "none";
 }
 window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    if (event.target == box) {
+        box.style.display = "none";
     }
 }
 

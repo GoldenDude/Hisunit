@@ -14,7 +14,7 @@
 
     </head>
     
-    <body id="tipul">
+    <body>
         <header>
             <section>
                 <a id = "logo" href = "#"></a>
@@ -43,7 +43,7 @@
             <div class = "clear"></div>
         </header>
 
-        <div class = "container">
+        <div id="tipul" class = "container">
              <main>
                 <h1 class="text-center">פרטי טיפול - יואב כהן</h1>        
                 <h5 class="text-right">פרטי המטופל</h5>
@@ -92,34 +92,35 @@
                         </tbody>
                     </table>
                     <h4 class="mr-5 mt-4 text-right">פרטי הטיפול</h4>
-                    <div class="input-group mb-3">
-                        <input type="text" class="inputSize mt-3 col-4  text-right form-control" placeholder="...סרוק/י ברקוד" aria-label="...סרוק/י ברקוד" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <i class="pt-3 mr-5 ml-3 fas fa-barcode fa-2x"></i>
-                            </div>
-                        <label class="mr-5 mt-2 text-right">אי-קולי</label>
-                    </div>
-                    <div class="input-group mb-3">
+                    <form name="vaccineForm" method="GET">
+                        <div id="content-container" class="input-group mb-3">
                             <input type="text" class="inputSize mt-3 col-4  text-right form-control" placeholder="...סרוק/י ברקוד" aria-label="...סרוק/י ברקוד" aria-describedby="basic-addon2">
                                 <div class="input-group-append">
                                     <i class="pt-3 mr-5 ml-3 fas fa-barcode fa-2x"></i>
                                 </div>
-                            <label class="mr-5 mt-2 text-right">קדחת צהובה</label>
+                            <label class="mr-5 mt-2 text-right">אי-קולי</label>
                         </div>
-                    <p id="add" class="mr-5 mt-3 text-right">הוסף חיסון נוסף &#10010;</p>
+                        <div class="input-group mb-3">
+                                <input type="text" class="inputSize mt-3 col-4  text-right form-control" placeholder="...סרוק/י ברקוד" aria-label="...סרוק/י ברקוד" aria-describedby="basic-addon2">
+                                    <div class="input-group-append">
+                                        <i class="pt-3 mr-5 ml-3 fas fa-barcode fa-2x"></i>
+                                    </div>
+                                <label class="mr-5 mt-2 text-right">קדחת צהובה</label>
+                            </div>
+                        <p id="add" class="mr-5 mt-3 text-right">הוסף חיסון נוסף &#10010;</p>
+                    </form>
                     <h3 class="mr-5 text-right">המצלת המערכת</h3>
-                    <div class="input-group mb-3">
+                    <form name="exstraForm" method="GET">
+                        <div class="input-group mb-3">
                             <input type="text" class="inputSize mt-3 col-4  text-right form-control" placeholder="...סרוק/י ברקוד" aria-label="...סרוק/י ברקוד" aria-describedby="basic-addon2">
                                 <div class="input-group-append">
                                     <i class="pt-3 mr-5 ml-3 fas fa-barcode fa-2x"></i>
                                 </div>
                             <label class="mr-5 mt-2 text-right">שפעת</label>
                         </div>
-
                         <input type="submit" id="sub" class="submit" value="סיים טיפול">
                         <button class="back float-right">חזור</button>
-
-
+                        </form>
                         <div id="lightBox" class="lightBox">   
                                 <div class="lightBox-content">
                                         <div class="lightBox-header">
