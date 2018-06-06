@@ -281,7 +281,7 @@ header > section > form > ::-webkit-input-placeholder{
 }
 
 
-.lightBox {
+#tipul .lightBox {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -295,7 +295,7 @@ header > section > form > ::-webkit-input-placeholder{
 }
 
 /* Modal Content/Box */
-.lightBox-content {
+#tipul .lightBox-content {
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
@@ -304,39 +304,39 @@ header > section > form > ::-webkit-input-placeholder{
 }
 
 /* The Close Button */
-.close {
+#tipul .close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+#tipul .close:hover,
+#tipul .close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
 }
 
 /* Modal Header */
-.lightBox-header {
+#tipul .lightBox-header {
     padding: 2px 16px;
     background-color: #5cb85c;
     color: white;
 }
 
 /* Modal Body */
-.lightBox-body {padding: 2px 16px;}
+#tipul .lightBox-body {padding: 2px 16px;}
 
 /* Modal Footer */
-.lightBox-footer {
+#tipul .lightBox-footer {
     padding: 2px 16px;
     background-color: #5cb85c;
     color: white;
 }
 
 /* Modal Content */
-.lightBox-content {
+#tipul .lightBox-content {
     position: relative;
     background-color: #fefefe;
     margin: auto;
