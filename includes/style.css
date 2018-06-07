@@ -27,10 +27,25 @@ body > header > section > h5{
 }
 .navbar{
     position: relative;
-    bottom: 16px;
+    bottom: 42px;
     width: 100%;
     height: 52px;
     background-color: #62c462;
+    z-index: 1;
+}
+
+.navbar-nav{
+    background-color: #62c462;
+    z-index: 1;
+}
+
+.fas{
+    font-size: 25px;
+}
+
+.form-inline{
+    background-color: #62c462;
+    height: 50px;
 }
 
 .nav-item{
@@ -74,6 +89,11 @@ header > section > form > ::-webkit-input-placeholder{
     left: 135px;
 }
 
+.btn-outline-success{
+    background-color: #ffffff;
+    border: none;
+}
+
 #logo{
     margin: 0px auto;   
     display: block;
@@ -87,6 +107,8 @@ header > section > form > ::-webkit-input-placeholder{
     background-color: #a0db9d;
     color: #777777;
     font-weight: bold;
+    height: 52px;
+    width: 231px;
 }
 
 #t1{
@@ -95,7 +117,7 @@ header > section > form > ::-webkit-input-placeholder{
 
 #clock{
     position: relative;
-    color: #ffffff;
+    color: #616161;
     font-size: 18px;
     width: 50px;
     height: 21px;
@@ -105,7 +127,7 @@ header > section > form > ::-webkit-input-placeholder{
 
 #date{
     position: relative;
-    color: #ffffff;
+    color: #616161;
     width: 100px;
     height: 21px;
     font-size: 18px;
@@ -116,7 +138,7 @@ header > section > form > ::-webkit-input-placeholder{
 
 .breadcrumb{
     position: relative;
-    bottom: 55px;
+    bottom: 40px;
     float: right;
     right: 40px;
     background-color: #ffffff;
@@ -216,7 +238,7 @@ header > section > form > ::-webkit-input-placeholder{
     position: relative;
     width: 230px;
     margin: 0px auto;
-    bottom: 50px;
+    bottom: 30px;
     font-weight: bold;
 }
 
@@ -288,6 +310,26 @@ header > section > form > ::-webkit-input-placeholder{
     position: fixed;
     bottom:5px;
     right: 10%;
+}
+
+#tipul .continue {
+    background-color: #ffffff;
+    border: none;
+    width: 144px;
+    height: 45px;
+    color: #000000;
+    border-radius: 5px;
+}
+
+#tipul .backMenu {
+    background-color: #616161;
+    border: none;
+    width: 144px;
+    height: 45px;
+    color: #ffffff;
+    border-radius: 5px;
+    position: relative;
+    float: right;
 }
 
 #tipul .container{
@@ -437,15 +479,14 @@ header > section > form > ::-webkit-input-placeholder{
     background-color: #62c462;
     border-radius: 5px;
     border: none;
-<<<<<<< HEAD
+    position: fixed;
+    bottom:5px;
 }
 
 #hisunim .currentStock[innerHTML = "300"]{
     color: #46a546;
-=======
     position: fixed;
     bottom: 10px;
->>>>>>> 4cba1eebd30e68c1f893a245a712fadbc3110a58
 }
 
 
@@ -567,12 +608,6 @@ header > section > form > ::-webkit-input-placeholder{
 
 
 
-<<<<<<< HEAD
-.red {color:red}
-.orange {color:orange}
-.green {color:green}
-=======
 .red {color: #bd362f}
 .yellow {color: #ffc40d}
 .green {color: #46a546}
->>>>>>> 4cba1eebd30e68c1f893a245a712fadbc3110a58

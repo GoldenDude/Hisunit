@@ -35,7 +35,7 @@ function delay(ms){
         while(end < start + ms) {
           end = new Date().getTime();  
         }
-        return true;
+        return false;
 }
 
 function startTime() {    
