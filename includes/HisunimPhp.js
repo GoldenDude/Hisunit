@@ -5,23 +5,12 @@ window.addEventListener('load', function() {
         url: "action.php",
         cache: true,
         success: function(html){
-<<<<<<< HEAD
-<<<<<<< HEAD
-            $("thead").after(html),
-            $("main").after.colors()
-
-=======
-            $("thead").after(html);
->>>>>>> 340aa0cf6bae27e01d3dc0665acdbb8da43fcb6f
-=======
-            $("thead").after(html);
->>>>>>> 340aa0cf6bae27e01d3dc0665acdbb8da43fcb6f
+            $("thead").after(html)
         }
     });
 
     return false;
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 });
 
 function colors(){
@@ -42,9 +31,5 @@ function colors(){
             
     } 
 } 
-=======
-});
->>>>>>> 340aa0cf6bae27e01d3dc0665acdbb8da43fcb6f
-=======
-});
->>>>>>> 340aa0cf6bae27e01d3dc0665acdbb8da43fcb6f
+
+
