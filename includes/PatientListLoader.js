@@ -3,8 +3,6 @@ window.addEventListener('load', function(){
     var index = 0;
     var notTreatedFound = 0;
 
-
-
     $.getJSON("data/patients.json", function (data) {
         console.log(data);
         json_data = data;
@@ -88,11 +86,11 @@ window.addEventListener('load', function(){
                 ++index;
             }
 
-            var button = $('<a href = "tipul.html"> <button target = "tipul.html" type="button" class = "pDetail"> פרטי טיפול </button></a>' );
+            var button = $('<button type = "submit" name = "selected" class = "pDetail" value = "' + row.id + '" > פרטי טיפול </button>');
 
             $("tbody").append(table_row);
             table_row.prepend(button);
 
-        }
-     })   
+        }    
+    })
 })

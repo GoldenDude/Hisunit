@@ -1,18 +1,18 @@
 [
-    {"id":325365897, "name":"אברהם ברנשטיין", "age": "59" ,"fatherName": "יחזקאל", "sex": "ז" , "city":"רחובות","dob":"15/06/1996", "street": "הרצל", "house": "42", "phone": "08-6595569", "cellphone": "052-5958722",
-        "treatment":{ "t1": "שפעת", "t2": "קדחת צהובה"}, "hour": "13:00", "treated": "yes"}
-    ,{"id":325365897, "name":"כהן יואב", "age": "22" ,"fatherName": "יובל", "sex": "ז" , "city":"רחובות","dob":"15/06/1996", "street": "הרצל", "house": "42", "phone": "08-6595569", "cellphone": "052-5958722",
-        "treatment":{ "t1": "אי-קולי", "t2": "קדחת צהובה"}, "hour": "13:30", "treated": "yes"}
-    ,{"id":325365897, "name":"בני יעקב", "age": "36" ,"fatherName": "בנימין", "sex": "ז" , "city":"רחובות","dob":"15/06/1996", "street": "הרצל", "house": "42", "phone": "08-6595569", "cellphone": "052-5958722",
-        "treatment":{ "t1": "שפעת", "t2": "צהבת בי"}, "hour": "14:00", "treated": "yes"}
-    ,{"id":325365897, "name":"ליאת הדר", "age": "17" ,"fatherName": "אין-עוד-מלבדו", "sex": "ז" , "city":"רחובות","dob":"15/06/1996", "street": "הרצל", "house": "42", "phone": "08-6595569", "cellphone": "052-5958722",
-        "treatment":{ "t1": "אי-קולי", "t2": "צהבת אי"}, "hour": "14:30", "treated": "yes"},
-    {"id":325365897, "name":"אברהם ברנשטיין", "age": "59" ,"fatherName": "יחזקאל", "sex": "ז" , "city":"רחובות","dob":"15/06/1996", "street": "הרצל", "house": "42", "phone": "08-6595569", "cellphone": "052-5958722",
-        "treatment":{ "t1": "שפעת", "t2": "קדחת צהובה"}, "hour": "15:00", "treated": "no"}
-    ,{"id":325365897, "name":"כהן יואב", "age": "22" ,"fatherName": "יובל", "sex": "ז" , "city":"רחובות","dob":"15/06/1996", "street": "הרצל", "house": "42", "phone": "08-6595569", "cellphone": "052-5958722",
-        "treatment":{ "t1": "אי-קולי", "t2": "קדחת צהובה"}, "hour": "15:30", "treated": "no"}
-    ,{"id":325365897, "name":"בני יעקב", "age": "36" ,"fatherName": "בנימין", "sex": "ז" , "city":"רחובות","dob":"15/06/1996", "street": "הרצל", "house": "42", "phone": "08-6595569", "cellphone": "052-5958722",
-        "treatment":{ "t1": "שפעת", "t2": "צהבת בי"}, "hour": "16:00", "treated": "no"}
-    ,{"id":325365897, "name":"ליאת הדר", "age": "17" ,"fatherName": "אין-עוד-מלבדו", "sex": "ז" , "city":"רחובות","dob":"15/06/1996", "street": "הרצל", "house": "42", "phone": "08-6595569", "cellphone": "052-5958722",
-        "treatment":{ "t1": "אי-קולי", "t2": "צהבת אי"}, "hour": "16:30", "treated": "no"}
+    {"id":325365897, "name":"ברנשטיין אברהם", "age": "59.3" ,"fatherName": "יחזקאל", "sex": "ז" , "city":"רחובות","dob":"15/06/1996", "street": "הרצל", "house": "42", "phone": "08-6595569", "cellphone": "052-5958722",
+        "treatment":{ "t1": "שפעת", "t2": "קדחת צהובה"}, "hour": "13:00", "treated": "yes", "recommended" : "אדמת"}
+    ,{"id":325365898, "name":"כהן יואב", "age": "22.5" ,"fatherName": "יובל", "sex": "ז" , "city":"רחובות","dob":"15/06/1996", "street": "הרצל", "house": "42", "phone": "08-6595569", "cellphone": "052-5958722",
+        "treatment":{ "t1": "אי-קולי", "t2": "קדחת צהובה"}, "hour": "13:30", "treated": "yes", "recommended" : "שפעת"}
+    ,{"id":325365899, "name":"יעקב בני", "age": "36.8" ,"fatherName": "בנימין", "sex": "ז" , "city":"רחובות","dob":"15/06/1996", "street": "הרצל", "house": "42", "phone": "08-6595569", "cellphone": "052-5958722",
+        "treatment":{ "t1": "שפעת", "t2": "צהבת בי"}, "hour": "14:00", "treated": "yes", "recommended" : "טטנוס"}
+    ,{"id":325365900, "name":"ליאת הדר", "age": "17.9" ,"fatherName": "יצחק", "sex": "נ" , "city":"רחובות","dob":"15/06/1996", "street": "הרצל", "house": "42", "phone": "08-6595569", "cellphone": "052-5958722",
+        "treatment":{ "t1": "שפעת", "t2": "צהבת אי"}, "hour": "14:30", "treated": "yes", "recommended" : "פפילומה"},
+    {"id":325365901, "name":"ברנשטיין אברהם", "age": "59.9" ,"fatherName": "יחזקאל", "sex": "ז" , "city":"רחובות","dob":"15/06/1996", "street": "הרצל", "house": "42", "phone": "08-6595569", "cellphone": "052-5958722",
+        "treatment":{ "t1": "שפעת", "t2": "קדחת צהובה"}, "hour": "15:00", "treated": "no", "recommended" : "פוליו"}
+    ,{"id":325365902, "name":"כהן יואב", "age": "22.4" ,"fatherName": "יובל", "sex": "ז" , "city":"רחובות","dob":"15/06/1996", "street": "הרצל", "house": "42", "phone": "08-6595569", "cellphone": "052-5958722",
+        "treatment":{ "t1": "אי-קולי", "t2": "קדחת צהובה"}, "hour": "15:30", "treated": "no", "recommended" : "שפעת"}
+    ,{"id":325365903, "name":"יעקב בני", "age": "36.4" ,"fatherName": "בנימין", "sex": "ז" , "city":"רחובות","dob":"15/06/1996", "street": "הרצל", "house": "42", "phone": "08-6595569", "cellphone": "052-5958722",
+        "treatment":{ "t1": "שפעת", "t2": "צהבת בי"}, "hour": "16:00", "treated": "no", "recommended" : "קדחת צהובה"}
+    ,{"id":325365904, "name":"ליאת הדר", "age": "17.6" ,"fatherName": "יצחק", "sex": "נ" , "city":"רחובות","dob":"15/06/1996", "street": "הרצל", "house": "42", "phone": "08-6595569", "cellphone": "052-5958722",
+        "treatment":{ "t1": "אי-קולי", "t2": "צהבת אי"}, "hour": "16:30", "treated": "no", "recommended" : "שפעת"}
 ]
