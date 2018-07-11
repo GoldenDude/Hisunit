@@ -433,7 +433,7 @@ header > section > form > ::-webkit-input-placeholder{
 
 /* hisunim List */
 
-#hisunim main > h1{
+#hisunim h1{
     font-size: 24px;
     position: relative;
     width: 450px;
@@ -475,11 +475,8 @@ header > section > form > ::-webkit-input-placeholder{
 }
 
 #hisunim input[type = checkbox] {
-    position: relative;
     width: 20px;
     height: 20px;
-    top: 22px;
-    left: 142px;
 }
 
 #hisunim input[type = submit]{

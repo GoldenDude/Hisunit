@@ -10,6 +10,7 @@
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
             <link rel = "stylesheet" href = "https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity = "sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin = "anonymous">
             <link rel = "stylesheet" href = "includes/style.css">
+            <script src = "includes/HisunimPhp.js"></script>
             <script src = "includes/HisunimLoader.js"></script>
             <script src = "includes/Clock.js"></script>
             <link href = "https://fonts.googleapis.com/css?family=Alef" rel = "stylesheet">
@@ -61,8 +62,8 @@
             <div class = "clear"></div>
         </header>
 
-        <div id = "hisunim" class = "container">
-             <main>
+        <main>
+            <div id = "hisunim" class = "container">
                 <h1>ניהול מלאי חיסונים - כללית למטייל, רחובות</h1>        
                 <form action = "confirm.html" name = "Order" method = "GET">
                     <table class = "table">
@@ -77,16 +78,15 @@
                             </tr>
                         </thead>
 
-                        <tbody>
-                        </tbody>
+                        
 
                     </table>
 
                     <input type = "submit" value = "שלח הזמנה">
 
                 </form>
-            </main>
-
-        </div>        
+                
+            </div>        
+        </main>
     </body>
 </html>
