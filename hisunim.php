@@ -10,7 +10,6 @@
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
             <link rel = "stylesheet" href = "https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity = "sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin = "anonymous">
             <link rel = "stylesheet" href = "includes/style.css">
-            <script src = "includes/HisunimPhp.js"></script>
             <script src = "includes/HisunimLoader.js"></script>
             <script src = "includes/Clock.js"></script>
             <link href = "https://fonts.googleapis.com/css?family=Alef" rel = "stylesheet">
@@ -39,7 +38,7 @@
                     <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
                       <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a id="selected" class="nav-link" href="hisunim.html"> ניהול מלאי חיסונים<span class="sr-only">(current)</span></a>
+                            <a id="selected" class="nav-link" href="hisunim.php"> ניהול מלאי חיסונים<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
                           <a class="nav-link" href="#"> ניהול פנקס מטופל <span class="sr-only">(current)</span></a>

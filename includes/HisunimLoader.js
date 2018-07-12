@@ -1,22 +1,40 @@
-window.addEventListener('load', function(){
-
-    var elements = document.getElementsByClassName("currentStock");
-
+window.addEventListener('load', function() {
     
-    this.console.log(elements.length);                    
-    for (i = 0; i < elements.length;) {
+    $.ajax({
+        type: "GET",
+        url: "action.php",
+        cache: true,
+        success: function(html){
+            $("thead").after(html);
+        },
+        complete: function(){
+            setColors();
+        }
+    });
 
-        var check = parseInt(elements[i].getAttribute("data-color"));
+    return false;
+
+});
+
+
+function setColors() {
+
+    var elements = document.getElementsByClassName("currentStock");    
+    
+    while (elements.length) {
+        
+        var check = parseInt(elements[0].getAttribute("data-color"));
         
         if (check >= 0 && check <= 100)
-            elements[i].className = "red";
+            elements[0].className = "red";
         
         if (check > 100 && check <= 200)
-            elements[i].className = "yellow";
+            elements[0].className = "yellow";
         
-        if (check > 200 && check <= 350)
-            elements[i].className = "green";
+        if (check > 200)
+            elements[0].className = "green";
     }
     
+    return true;    
 
-})
+}

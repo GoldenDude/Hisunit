@@ -14,6 +14,7 @@
 
    	while($row = mysqli_fetch_assoc($result)) {//results are in an associative array. keys are cols names
 	   //output data from each row
+	   
 	   if($counter % 2){
 			echo '<tr class = "marked">';
 			echo '<td></td><td><input type = "checkbox" value = "' . $row["name"] .'" name = "toOrder[]"></td>';   
@@ -25,11 +26,11 @@
 			echo '<tr>';
 			echo '<td></td><td><input type = "checkbox" value = "' . $row["name"] .'" name = "toOrder[]"></td>';   
 			echo  '<td>' .$row["recommendedStock"]. '</td>' . '<td class = "currentStock" data-color = '. $row["currentStock"]. '>' . $row["currentStock"]. '</td>'.
-				'<td>'. $row["name"] . '</td>'. '<td>'. $row["serial"]. '</td></tr>';
+			'<td>'. $row["name"] . '</td>'. '<td>'. $row["serial"]. '</td></tr>';
 	   }
-		
-			   
+		 
 		++$counter;
+
 	}
 	
 	echo '</tbody>';
