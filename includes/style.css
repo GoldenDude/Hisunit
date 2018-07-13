@@ -479,7 +479,7 @@ header > section > form > ::-webkit-input-placeholder{
     height: 20px;
 }
 
-#hisunim input[type = submit]{
+#hisunim input[class = send]{
     width: 116px;
     height: 45px;
     font-size: 18px;

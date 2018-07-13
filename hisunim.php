@@ -12,6 +12,7 @@
             <script src = "includes/HisunimLoader.js"></script>
             <script src = "includes/Clock.js"></script>
             <script src = "includes/Lightbox.js"></script>
+            <script src = "includes/AddHisunPhp.js"></script>
             <link href = "https://fonts.googleapis.com/css?family=Alef" rel = "stylesheet">
             <title>Hisunit</title>
     </head>
@@ -76,59 +77,44 @@
                             </tr>
                         </thead>
                     </table>
-                    <input type = "submit" value = "שלח הזמנה">
+                    <input class="send" type = "submit" value = "שלח הזמנה">
                     <input onsubmit="return delay(0)" id="sub" class="float-right" value="הוספת חיסון חדש">             
                 </form>           
+            
+                <div id="lightBox" class="lightBox">   
+                    <div class="lightBox-content">
+                        <div class="lightBox-header">
+                            <span class="close">&times;</span>
+                            <h2 class="text-right">הודעת מערכת</h2>
+                        </div>
+                        <div class="lightBox-body">
+                            <p class="text-center">:הזנת חיסון חדש למערכת</p>
+                            <form id="newVaccine" name="addVaccine" method="POST">
+                                <div class="input-group mb-3">
+                                    <input id="name" type="text" required class="inputSize mt-3 col-4  text-right form-control" placeholder="הכנס שם" name="name">
+                                    <label class="mt-2 text-right">:שם החיסון</label>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input id="serial"  type="text" required class="inputSize mt-3 col-4  text-right form-control" placeholder="הכנס מספר סידורי" name="serial">
+                                    <label class="mr-5 mt-2 text-right">:מספר סידורי</label>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input id="currentStock" type="text" class="inputSize mt-3 col-4  text-right form-control" placeholder="הכנס כמות" name="currentStock">
+                                    <label class="mt-2 text-right">:מלאי</label>
+                                </div>
 
-            <div id="lightBox" class="lightBox">   
-                <div class="lightBox-content">
-                    <div class="lightBox-header">
-                        <span class="close">&times;</span>
-                        <h2 class="text-right">הודעת מערכת</h2>
+                                    <p class="text-center"></p>
+                        
+                                <div class="lightBox-footer">
+                                    <input  class="continue" type = "submit" value = "הוספה">
+                                    
+                                    <a href="index.html"><button class="backMenu">לתפריט הראשי</button></a>
+                                </div>
+                            
+                            </form>
                     </div>
-                    <div class="lightBox-body">
-                        <p class="text-center">!נתונים נשמרו בהצלחה</p>
-
-                        <form name="addVaccine" method="GET">
-                            <div class="right input-group mb-3">
-                                <input type="text" required class="Right inputSize mt-3 col-4  text-right form-control" placeholder="הכנס שם" name="name">
-                                    <div class="input-group-append">
-                                        <i class="pt-3 mr-5 ml-3 fas fa-barcode fa-2x"></i>
-                                    </div>
-                                <label class="mt-2 text-right">:שם החיסון</label>
-                            </div>
-                            <div class="right input-group mb-3">
-                                <input type="text" required class="inputSize mt-3 col-4  text-right form-control" placeholder="הכנס מספר סידורי" name="serial">
-                                    <div class="input-group-append">
-                                        <i class="pt-3 mr-5 ml-3 fas fa-barcode fa-2x"></i>
-                                    </div>
-                                <label class="mr-5 mt-2 text-right">:מספר סידורי</label>
-                            </div>
-                            <div class="right input-group mb-3">
-                                <input type="text" class="inputSize mt-3 col-4  text-right form-control" placeholder="הכנס כמות" name="currentStock">
-                                    <div class="input-group-append">
-                                        <i class="pt-3 mr-5 ml-3 fas fa-barcode fa-2x"></i>
-                                    </div>
-                                <label class="mt-2 text-right">:מלאי</label>
-                            </div>
-                            <div class="right input-group mb-3">
-                                <input type="text" class="inputSize mt-3 col-4  text-right form-control" placeholder="קבע כמות מקסימלית" name="recommendedStock">
-                                    <div class="input-group-append">
-                                        <i class="pt-3 mr-5 ml-3 fas fa-barcode fa-2x"></i>
-                                    </div>
-                                <label class="mt-2 text-right">:מלאי מקסימלי</label>
-                            </div>
-
-                                <p class="text-center">שימי לב!, מספר החיסונים של "אי-קולי" הולך ואוזל (נותרו 10 מנות), על מנת לעבור ל"ניהול מלאי" לחצי על המשך</p>
-                            </div>
-                            <div class="lightBox-footer">
-                                <a  href="hisunim.php"><button class="continue">המשך</button></a>
-                                <a href="index.html"><button class="backMenu">לתפריט הראשי</button></a>
-                            </div>
-                        </form>
                 </div>
-            </div>  
-        </div>
+            </div>      
         </main>
     </body>
 </html>
