@@ -62,11 +62,11 @@
         </header>
 
         <main>
-            <div id = "hisunim" class = "container">
+		    <div id = "hisunim" class = "container">
                 <h1>ניהול מלאי חיסונים - כללית למטייל, רחובות</h1>        
-                <form action = "confirm.html" name = "Order" method = "GET">
+                <form action = "confirm.php" name = "Order" method = "GET">
                     <table class = "table">
-                        <thead>
+                        <thead id = "test">
                             <tr>
                                 <th scope = "col">הערות</th>
                                 <th scope = "col">נבחר</th>
@@ -76,16 +76,10 @@
                                 <th scope = "col">מספר סידורי</th>
                             </tr>
                         </thead>
-
-                        
-
                     </table>
-
                     <input type = "submit" value = "שלח הזמנה">
-
                 </form>
-                
-            </div>        
+            </div>
         </main>
     </body>
 </html>

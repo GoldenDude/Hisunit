@@ -2,7 +2,7 @@ window.addEventListener('load', function() {
     
     $.ajax({
         type: "GET",
-        url: "action.php",
+        url: "HisunimDataBaseLoader.php",
         cache: true,
         success: function(html){
             $("thead").after(html);
