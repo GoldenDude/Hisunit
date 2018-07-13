@@ -8,10 +8,11 @@ var disable = document.getElementsByTagName("input");
 
 btn.onclick = function() {
     modal.style.display = "block";
-    for (i=0; i < disable.length - 2; i++ ){
-        disable[i].disabled = true;
+    if (window.location.pathname == '/tipul.html'){
+        for (i=0; i < disable.length - 2; i++ ){
+            disable[i].disabled = true;
+        } 
     }
-    
 }
 
 span.onclick = function() {

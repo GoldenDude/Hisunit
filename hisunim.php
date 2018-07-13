@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
             <meta charset="UTF-8">
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
             <script src="includes/jquery-3.3.1.min.js"></script>
@@ -12,9 +11,9 @@
             <link rel = "stylesheet" href = "includes/style.css">
             <script src = "includes/HisunimLoader.js"></script>
             <script src = "includes/Clock.js"></script>
+            <script src = "includes/Lightbox.js"></script>
             <link href = "https://fonts.googleapis.com/css?family=Alef" rel = "stylesheet">
             <title>Hisunit</title>
-
     </head>
     
     <body>
@@ -78,8 +77,58 @@
                         </thead>
                     </table>
                     <input type = "submit" value = "שלח הזמנה">
-                </form>
-            </div>
+                    <input onsubmit="return delay(0)" id="sub" class="float-right" value="הוספת חיסון חדש">             
+                </form>           
+
+            <div id="lightBox" class="lightBox">   
+                <div class="lightBox-content">
+                    <div class="lightBox-header">
+                        <span class="close">&times;</span>
+                        <h2 class="text-right">הודעת מערכת</h2>
+                    </div>
+                    <div class="lightBox-body">
+                        <p class="text-center">!נתונים נשמרו בהצלחה</p>
+
+                        <form name="addVaccine" method="GET">
+                            <div class="right input-group mb-3">
+                                <input type="text" required class="Right inputSize mt-3 col-4  text-right form-control" placeholder="הכנס שם" name="name">
+                                    <div class="input-group-append">
+                                        <i class="pt-3 mr-5 ml-3 fas fa-barcode fa-2x"></i>
+                                    </div>
+                                <label class="mt-2 text-right">:שם החיסון</label>
+                            </div>
+                            <div class="right input-group mb-3">
+                                <input type="text" required class="inputSize mt-3 col-4  text-right form-control" placeholder="הכנס מספר סידורי" name="serial">
+                                    <div class="input-group-append">
+                                        <i class="pt-3 mr-5 ml-3 fas fa-barcode fa-2x"></i>
+                                    </div>
+                                <label class="mr-5 mt-2 text-right">:מספר סידורי</label>
+                            </div>
+                            <div class="right input-group mb-3">
+                                <input type="text" class="inputSize mt-3 col-4  text-right form-control" placeholder="הכנס כמות" name="currentStock">
+                                    <div class="input-group-append">
+                                        <i class="pt-3 mr-5 ml-3 fas fa-barcode fa-2x"></i>
+                                    </div>
+                                <label class="mt-2 text-right">:מלאי</label>
+                            </div>
+                            <div class="right input-group mb-3">
+                                <input type="text" class="inputSize mt-3 col-4  text-right form-control" placeholder="קבע כמות מקסימלית" name="recommendedStock">
+                                    <div class="input-group-append">
+                                        <i class="pt-3 mr-5 ml-3 fas fa-barcode fa-2x"></i>
+                                    </div>
+                                <label class="mt-2 text-right">:מלאי מקסימלי</label>
+                            </div>
+
+                                <p class="text-center">שימי לב!, מספר החיסונים של "אי-קולי" הולך ואוזל (נותרו 10 מנות), על מנת לעבור ל"ניהול מלאי" לחצי על המשך</p>
+                            </div>
+                            <div class="lightBox-footer">
+                                <a  href="hisunim.php"><button class="continue">המשך</button></a>
+                                <a href="index.html"><button class="backMenu">לתפריט הראשי</button></a>
+                            </div>
+                        </form>
+                </div>
+            </div>  
+        </div>
         </main>
     </body>
 </html>

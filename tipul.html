@@ -115,25 +115,23 @@
                         </tbody>
                     </table>
                     <h4 class="mr-5 mt-4 text-right">פרטי הטיפול</h4>
-                    <form name="vaccineForm" method="GET">
+                    <form name="vaccineForm" method="GET" onsubmit="return delay(0)">
                         <div class="right input-group mb-3">
-                            <input type="text" class="Right inputSize mt-3 col-4  text-right form-control" placeholder="...סרוק/י ברקוד" aria-label="...סרוק/י ברקוד" aria-describedby="basic-addon2">
+                            <input type="text" required class="Right inputSize mt-3 col-4  text-right form-control" placeholder="...סרוק/י ברקוד" aria-label="...סרוק/י ברקוד" aria-describedby="basic-addon2">
                                 <div class="input-group-append">
                                     <i class="pt-3 mr-5 ml-3 fas fa-barcode fa-2x"></i>
                                 </div>
                             <label class="mt-2 text-right"></label>
                         </div>
                         <div class="right input-group mb-3">
-                                <input type="text" class="inputSize mt-3 col-4  text-right form-control" placeholder="...סרוק/י ברקוד" aria-label="...סרוק/י ברקוד" aria-describedby="basic-addon2">
-                                    <div class="input-group-append">
-                                        <i class="pt-3 mr-5 ml-3 fas fa-barcode fa-2x"></i>
-                                    </div>
-                                <label class="mr-5 mt-2 text-right"></label>
-                            </div>
+                            <input type="text" required class="inputSize mt-3 col-4  text-right form-control" placeholder="...סרוק/י ברקוד" aria-label="...סרוק/י ברקוד" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <i class="pt-3 mr-5 ml-3 fas fa-barcode fa-2x"></i>
+                                </div>
+                            <label class="mr-5 mt-2 text-right"></label>
+                        </div>
                         <p id="add" class="mr-5 mt-3 text-right">הוסף חיסון נוסף &#10010;</p>
-                    </form>
-                    <h3 class="mr-5 text-right">המלצת המערכת</h3>
-                    <form  name="exstraForm" method="GET" onsubmit="return delay(0)">
+                        <h3 class="mr-5 text-right">המלצת המערכת</h3>
                         <div class="right input-group mb-3">
                             <input type="text" class="inputSize mt-3 col-4  text-right form-control" placeholder="...סרוק/י ברקוד" aria-label="...סרוק/י ברקוד" aria-describedby="basic-addon2">
                                 <div class="input-group-append">
@@ -144,6 +142,7 @@
                         <input type="submit" id="sub" class="submit" value="סיים טיפול">
                     </form>
                     <a href="index.html" ><button class="back float-right">חזור</button></a>
+
                         <div id="lightBox" class="lightBox">   
                             <div class="lightBox-content">
                                     <div class="lightBox-header">
@@ -155,7 +154,7 @@
                                         <p class="text-center">שימי לב!, מספר החיסונים של "אי-קולי" הולך ואוזל (נותרו 10 מנות), על מנת לעבור ל"ניהול מלאי" לחצי על המשך</p>
                                     </div>
                                     <div class="lightBox-footer">
-                                        <a  href="hisunim.html"><button class="continue">המשך</button></a>
+                                        <a  href="hisunim.php"><button class="continue">המשך</button></a>
                                         <a href="index.html"><button class="backMenu">לתפריט הראשי</button></a>
                                     </div>
                             </div>

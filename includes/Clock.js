@@ -21,6 +21,8 @@ window.onload = function startTime(){
     document.getElementById("date").innerHTML = currentDay + '/' + currentMonth + '/' +  today.getFullYear();
     document.getElementById("clock").innerHTML = h + ":" + m + ":" + s;
     document.getElementById("currDay").innerHTML = "יום " + weekday[today.getDay()];
+    if (document.getElementById("date2"))
+        document.getElementById("date2").innerHTML = "יום " + weekday[today.getDay()] + " " + currentDay + '/' + currentMonth + '/' +  today.getFullYear();
     var t = setTimeout(startTime, 500);
 }
 
