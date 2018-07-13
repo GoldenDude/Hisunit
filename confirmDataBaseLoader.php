@@ -3,21 +3,28 @@
 	include('db.php');	
 	$toOrder = $_POST["toOrder"];
 	$length = $_POST["length"];
+	$selectedString = "";
+	if ($length)
+		$selectedString .= "'".$toOrder[0] . "'";
+	
+	$count = 1;
+	
+	while ($count < $length) {
+		$selectedString .= "," . "'" . $toOrder[$count] . "'";
+		++$count;
+	}
 
 	$counter = 0;
 	$totalSum = 0;
-
+	
 	echo '<tbody>';
+	$query  = "SELECT * FROM tb_Users_210_Hisunim WHERE name IN (" . $selectedString. ")";
+	$result = mysqli_query($connection, $query);
+	if(!$result) { 
+		die("DB query failed.");
+	}
 
-	while($length--) {
-		$query  = "SELECT * FROM tb_Users_210_Hisunim WHERE name ='" . $toOrder[$counter] . "'";
-		$result = mysqli_query($connection, $query);
-
-		if(!$result) { 
-			die("DB query failed.");
-		}
-
-		$row = mysqli_fetch_assoc($result);
+	while($row = mysqli_fetch_assoc($result)) {
 		
 		$sum = $row["recommendedStock"] - $row["currentStock"];
 
@@ -26,9 +33,6 @@
 			++$counter;
 			continue;
 		}
-
-		$query2 = "UPDATE tb_Users_210_Hisunim SET currentStock = recommendedStock WHERE name ='" . $toOrder[$counter] . "'";
-		mysqli_query($connection, $query2);
 
 		$totalSum = $totalSum + $sum;
 		
@@ -42,15 +46,20 @@
 			'<td scrope = "row">'. $row["name"]. '</tr>';
 		}
 
+
+		
 		++$counter;
-		 
+		
 	}
+	
+	$query2 = "UPDATE tb_Users_210_Hisunim SET currentStock = recommendedStock WHERE name IN (" . $selectedString . ")";
+	mysqli_query($connection, $query2);
 
 	echo '</tbody>'.'<h2>'.$totalSum.'</h2>';
-	//echo '<h3>.סך הכל:' . $totalSum . 'מנות</h3>';
+	echo '<h3>.סך הכל:' . $totalSum . 'מנות</h3>';
 
 
-	//release returned data
+	// release returned data
 	mysqli_free_result($result);	
 
 	//close DB connection
