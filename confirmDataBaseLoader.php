@@ -17,12 +17,13 @@
 	$counter = 0;
 	$totalSum = 0;
 	
-	echo '<tbody>';
 	$query  = "SELECT * FROM tb_Users_210_Hisunim WHERE name IN (" . $selectedString. ")";
 	$result = mysqli_query($connection, $query);
 	if(!$result) { 
 		die("DB query failed.");
 	}
+	
+	echo "<tbody>";
 
 	while($row = mysqli_fetch_assoc($result)) {
 		
@@ -36,27 +37,24 @@
 
 		$totalSum = $totalSum + $sum;
 		
+		
 		if($counter % 2){
-			echo '<tr class = "marked"><td scrope = "row">' .$sum . '</td>' . '<td>' . $row["serial"]. '</td>'.
-				'<td>'. $row["name"]. '</tr>';
+			echo "<tr class = 'marked'><td scrope = 'row'> $sum </td><td>{$row['serial']}</td><td>{$row['name']}</td></tr>";
 		}
 
-		else {
-			echo '<tr><td scrope = "row">' .$sum . '</td>' . '<td scrope = "row">' . $row["serial"]. '</td>'.
-			'<td scrope = "row">'. $row["name"]. '</tr>';
-		}
-
+		 
+		else echo "<tr><td scrope = 'row'> $sum </td><td>{$row['serial']}</td><td>{$row['name']}</td></tr>";
 
 		
 		++$counter;
 		
 	}
-	
-	$query2 = "UPDATE tb_Users_210_Hisunim SET currentStock = recommendedStock WHERE name IN (" . $selectedString . ")";
-	mysqli_query($connection, $query2);
 
-	echo '</tbody>'.'<h2>'.$totalSum.'</h2>';
-	echo '<h3>.סך הכל:' . $totalSum . 'מנות</h3>';
+	// $query2 = "UPDATE tb_Users_210_Hisunim SET currentStock = recommendedStock WHERE name IN (".$selectedString.")";
+	// mysqli_query($connection, $query2);
+	echo "</tbody>";
+
+	echo "<h2> $totalSum </h2>";
 
 
 	// release returned data

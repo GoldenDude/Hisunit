@@ -404,13 +404,14 @@ header > section > form > ::-webkit-input-placeholder{
 }
 
 
-#tipul .lightBox-body {padding: 2px 16px;}
+#tipul .lightBox-body {padding: 2px 16px; }
 
 
 #tipul .lightBox-footer {
     padding: 2px 16px;
     background-color: #5cb85c;
     color: white;
+   
 }
 
 
@@ -540,13 +541,14 @@ header > section > form > ::-webkit-input-placeholder{
 }
 
 
-#hisunim .lightBox-body {padding: 2px 16px;}
+/* #hisunim .lightBox-body {padding: 2px 16px;} */
 
 
 #hisunim .lightBox-footer {
     padding: 2px 16px;
     background-color: #5cb85c;
     color: white;
+    width: 100%;
 }
 
 
