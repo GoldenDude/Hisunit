@@ -1,7 +1,7 @@
 window.addEventListener('load', function(){
 
 var modal = document.getElementById('lightBox');
-var btn = document.getElementById("sub");
+var btn = document.getElementsByClassName("sub");
 var span = document.getElementsByClassName("close")[0];
 var disable = document.getElementsByTagName("input");
 

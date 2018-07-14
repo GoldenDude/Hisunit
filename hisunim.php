@@ -83,7 +83,7 @@
                 </form>           
             
                 <input onsubmit="return delay(0)" id="sub" class="float-right" value="הוספת חיסון חדש"> 
-                <button onsubmit ="return delay(0)"><i class="fas fa-plus"></i></button>
+                <button class = "sendArrow" onsubmit ="return delay(0)"><i class="fas fa-plus"></i></button>
                 <div id="lightBox" class="lightBox">   
                     <div class="lightBox-content">
                         <div class="lightBox-header">
