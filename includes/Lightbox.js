@@ -5,6 +5,7 @@ var modalDelete = document.getElementById('lightBoxDelete');
 var btn = document.getElementById("sub");
 var btn2 = document.getElementById("sub2");
 var btnDelete = document.getElementById("Delete");
+var btnDelete2 = document.getElementById("Delete2");
 var span = document.getElementsByClassName("close")[0];
 var disable = document.getElementsByTagName("input");
 
@@ -41,6 +42,16 @@ if(btnDelete){
     }
 }
 
+if(btnDelete2){
+    btnDelete2.onclick = function() {
+        modalDelete.style.display = "block";
+        if (window.location.pathname == '/tipul.html'){
+            for (i=0; i < disable.length - 2; i++ ){
+                disable[i].disabled = true;
+            } 
+        }
+    }
+}
 span.onclick = function() {
     modal.style.display = "none";
     delay(3000);

@@ -17,13 +17,13 @@
 	   if($counter % 2){
 		echo "<tr class = 'marked'><td class = 'toHide'></td><td><input type = 'checkbox' name = 'toOrder[]' value = '{$row['name']}'></td>   
 		<td> {$row['recommendedStock']}</td><td class = 'currentStock' data-color = '{$row['currentStock']}'>{$row['currentStock']}</td>
-		<td>{$row['name']}</td><td>{$row['serial']}</td><td><button class = 'fas fa-trash' value = {$row['serial']}></button></td></tr>";
+		<td>{$row['name']}</td><td>{$row['serial']}</td></tr>";
 	   }
 
 	   else {
 		echo "<tr><td class = 'toHide'></td><td><input type = 'checkbox' name = 'toOrder[]' value = '{$row['name']}'></td>   
 		<td> {$row['recommendedStock']}</td><td class = 'currentStock' data-color = '{$row['currentStock']}'>{$row['currentStock']}</td>
-		<td>{$row['name']}</td><td>{$row['serial']}</td><td><button class = 'fas fa-trash' value = {$row['serial']}></button></td></tr>";
+		<td>{$row['name']}</td><td>{$row['serial']}</td></tr>";
 	   }
 		 
 		++$counter;

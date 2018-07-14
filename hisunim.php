@@ -13,6 +13,7 @@
         <script src = "includes/Clock.js"></script>
         <script src = "includes/Lightbox.js"></script>
         <script src = "includes/AddHisun.js"></script>
+        <script src = "includes/deleteHisun.js"></script>
         <link href = "https://fonts.googleapis.com/css?family=Alef" rel = "stylesheet">
         <title>Hisunit</title>
     </head>
@@ -78,12 +79,34 @@
                             </tr>
                         </thead>
                     </table>
+                    
                     <input class="send" type = "submit" value = "שלח הזמנה">
                     <button class="sendArrow" type = "submit"><i class="fas fa-arrow-left"></i></button>
                 </form>           
-                 
+
+                <form action ="hisunim.php" method = "POST">
+                    <div id="lightBoxDelete" class="lightBox">   
+                        <div class="lightBox-content">
+                            <div class="lightBox-header alertLightBox">
+                            <span class="close">&times;</span>
+                            <h2 class="text-right">הודעת מערכת</h2>
+                            </div>
+                                <div class="lightBox-body">
+                                    <p class="text-center">אישור מחיקה</p>
+                                    <p class="text-center">?את עומדת לבצע מחיקה! היזהרי! האם את בטוחה</p>
+                                </div>
+                                <div class="lightBox-footer alertLightBox">
+                                    <button  class="continue" id = "toDelete">מחיקה</button>
+                                    <a href="hisunim.php"><button class="backMenu">ביטול</button></a>
+                                </div>
+                        </div>
+                    </div>
+                </form>
+
+                <input onsubmit="return delay(0)" id="Delete" class="float-right" value="מחיקת חיסונים">
+                <button onsubmit="return delay(0)" id="Delete2" class="float-right"><i class = "fas fa-trash"></i></button>
                 <input onsubmit="return delay(0)" id="sub" class="float-right" value="הוספת חיסון חדש"> 
-                <button class = "sendArrow" onsubmit id="sub2" ="return delay(0)"><i class="fas fa-plus"></i></button>
+                <button class = "sendArrow" id="sub2" onsubmit ="return delay(0)"><i class="fas fa-plus"></i></button>
                 <div id="lightBox" class="lightBox">   
                     <div class="lightBox-content">
                         <div class="lightBox-header">
@@ -92,7 +115,7 @@
                         </div>
                         
                         <p class="text-center">:הזנת חיסון חדש למערכת</p>
-                        <form class="lightBox-body" name="addVaccine" action="#" method="GET" onsubmit="return validateForm()">
+                        <form class="lightBox-body" name="addVaccine" action="#" method="POST" onsubmit="return validateForm()">
                             <div class="input-group mb-3">
                                 <input type="text" required class="inputSize mt-3 col-4  text-right form-control" placeholder="הכנס שם" name="name">
                                 <label class="mt-2 text-right">:שם החיסון</label>
@@ -113,25 +136,6 @@
                             <div class="lightBox-footer">
                                 <input class="continue" type = "submit" value="הוספה">
                                 
-                                <a href="index.html"><button class="backMenu">לתפריט הראשי</button></a>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <input onsubmit="return delay(0)" id="Delete" class="float-right" value="מחיקת חיסונים">
-                <div id="lightBoxDelete" class="lightBox">   
-                    <div class="lightBox-content">
-                        <div class="lightBox-header">
-                        <span class="close">&times;</span>
-                        <h2 class="text-right">הודעת מערכת</h2>
-                        </div>
-                        <form class="lightBox-body" name="deleteVaccine" action="#" method="GET" onsubmit="return validateForm()">
-                            <div class="lightBox-body">
-                                <p class="text-center">אישור מחיקה</p>
-                                <p class="text-center">?את עומדת לבצע מחיקה! היזהרי! האם את בטוחה</p>
-                            </div>
-                            <div class="lightBox-footer">
-                                <input class="continue" type = "submit" value="הוספה">
                                 <a href="index.html"><button class="backMenu">לתפריט הראשי</button></a>
                             </div>
                         </form>

@@ -4,13 +4,12 @@ function validateForm(){
         var serial = document.forms["addVaccine"]["serial"].value;
         var currentStock = document.forms["addVaccine"]["currentStock"].value;
         var dataString = 'name=' + name + '&serial=' + serial + '&currentStock=' + currentStock;	
-       
+    
         $.ajax({
             type: "POST",
             url: "AddNewHisun.php",
             data: dataString,
             cache: true,
-
         });
     
     return true;

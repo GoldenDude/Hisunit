@@ -50,10 +50,10 @@
 		
 	}
 
-	// $query2 = "UPDATE tb_Users_210_Hisunim SET currentStock = recommendedStock WHERE name IN (".$selectedString.")";
-	// mysqli_query($connection, $query2);
 	echo "<tr></tr><tr><td class = 'bold'>$totalSum</td><td></td><td class = 'bold'>סך הכל</td></tbody>";
-
+	
+	$query2 = "UPDATE tb_Users_210_Hisunim SET currentStock = recommendedStock WHERE name IN (".$selectedString.")";
+	mysqli_query($connection, $query2);
 	// release returned data
 	mysqli_free_result($result);	
 

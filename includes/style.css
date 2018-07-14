@@ -558,10 +558,8 @@ header > section > form > ::-webkit-input-placeholder{
     right:20px;
 }
 
-.fas.fa-trash{
-    color: #ff0000;
-    border: none;
-    background-color: #ffffff;
+.fa-trash{
+    display: none;
 }
 
 #hisunim .fa-plus{
@@ -682,6 +680,15 @@ header > section > form > ::-webkit-input-placeholder{
     float: right;
 }
 
+
+#hisunim .lightBox-footer.alertLightBox{
+    background-color: #bd362f;
+}
+
+#hisunim .lightBox-header.alertLightBox{
+    background-color: #bd362f;
+}
+
 @keyframes animatetop {
     from {top: -300px; opacity: 0}
     to {top: 0px; opacity: 1}
@@ -709,6 +716,11 @@ header > section > form > ::-webkit-input-placeholder{
 
     #print{
         display: none;
+    }
+
+    #hisunim input[type = checkbox] {
+        width: 35px;
+        height: 35px;
     }
 }
 
@@ -747,6 +759,21 @@ header > section > form > ::-webkit-input-placeholder{
     }
 
     input[class = send]{
+        display: none;
+    }
+
+    #hisunim .fa-trash{
+        border: none;
+        display: block;
+        font-size: 40px;
+        position: fixed;
+        bottom: 55px;
+        right: 20px;
+        color: #ff0000;
+        background-color: #ffffff;
+    }
+
+    #Delete{
         display: none;
     }
 
