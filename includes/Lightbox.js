@@ -1,12 +1,22 @@
 window.addEventListener('load', function(){
 
 var modal = document.getElementById('lightBox');
-var btn = document.getElementsByClassName("sub");
+var btn = document.getElementById("sub");
+var btn2 = document.getElementById("sub2");
 var span = document.getElementsByClassName("close")[0];
 var disable = document.getElementsByTagName("input");
 
 
 btn.onclick = function() {
+    modal.style.display = "block";
+    if (window.location.pathname == '/tipul.html'){
+        for (i=0; i < disable.length - 2; i++ ){
+            disable[i].disabled = true;
+        } 
+    }
+}
+
+btn2.onclick = function() {
     modal.style.display = "block";
     if (window.location.pathname == '/tipul.html'){
         for (i=0; i < disable.length - 2; i++ ){
