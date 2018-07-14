@@ -326,55 +326,10 @@ header > section > form > ::-webkit-input-placeholder{
     right: 10%;
 }
 
-#tipul .continue {
-    background-color: #ffffff;
-    border: none;
-    width: 144px;
-    height: 45px;
-    color: #000000;
-    border-radius: 5px;
-}
-
-#tipul .backMenu {
-    background-color: #616161;
-    border: none;
-    width: 144px;
-    height: 45px;
-    color: #ffffff;
-    border-radius: 5px;
-    position: relative;
-    float: right;
-}
-
 #tipul .container{
     margin: 0px auto;
     max-width: 1000px;
 }
-
-
-#tipul .lightBox {
-    display: none;
-    position: fixed; 
-    z-index: 1; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4); 
-}
-
-
-#tipul .lightBox-content {
-    background-color: #fefefe;
-    margin: 15% auto; 
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; 
-}
-
-
 
 #tipul .close {
     color: #aaa;
@@ -398,41 +353,6 @@ header > section > form > ::-webkit-input-placeholder{
 #tipul .input-group{
     width: 570px;
     margin: 0px;
-}
-
-#tipul .lightBox-header {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-}
-
-
-#tipul .lightBox-body {padding: 2px 16px; }
-
-
-#tipul .lightBox-footer {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-   
-}
-
-
-#tipul .lightBox-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    border: 1px solid #888;
-    width: 80%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    animation-name: animatetop;
-    animation-duration: 0.4s
-}
-
-@keyframes animatetop {
-    from {top: -300px; opacity: 0}
-    to {top: 0px; opacity: 1}
 }
 
 /* hisunim List */
@@ -513,80 +433,6 @@ header > section > form > ::-webkit-input-placeholder{
     position: fixed;
     bottom:5px;
     right:20px;
-}
-
-#hisunim .lightBox {
-    display: none;
-    position: fixed; 
-    z-index: 1; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4); 
-}
-
-
-#hisunim .lightBox-content {
-    background-color: #fefefe;
-    margin: 15% auto; 
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; 
-}
-
-
-#hisunim .lightBox-header {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-}
-
-
-/* #hisunim .lightBox-body {padding: 2px 16px;} */
-
-
-#hisunim .lightBox-footer {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-    width: 100%;
-}
-
-
-#hisunim .lightBox-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    border: 1px solid #888;
-    width: 80%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    animation-name: animatetop;
-    animation-duration: 0.4s
-}
-
-
-#hisunim .continue {
-    background-color: #ffffff;
-    border: none;
-    width: 144px;
-    height: 45px;
-    color: #000000;
-    border-radius: 5px;
-}
-
-#hisunim .backMenu {
-    background-color: #616161;
-    border: none;
-    width: 144px;
-    height: 45px;
-    color: #ffffff;
-    border-radius: 5px;
-    position: relative;
-    float: right;
 }
 
 #hisunim .sendArrow{
@@ -728,6 +574,109 @@ header > section > form > ::-webkit-input-placeholder{
 #hisunim .inputSize{
     border-radius: 5px;
 }
+
+
+/* ---------------------------- LIGHT BOX -------------------------- */
+
+.lightBox {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+}
+
+
+.lightBox-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+
+.lightBox-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+
+/* #hisunim .lightBox-body {padding: 2px 16px;} */
+
+
+.lightBox-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+    width: 100%;
+}
+
+
+.lightBox-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+#tipul .continue {
+    background-color: #ffffff;
+    border: none;
+    width: 144px;
+    height: 45px;
+    color: #000000;
+    border-radius: 5px;
+}
+
+#tipul .backMenu {
+    background-color: #616161;
+    border: none;
+    width: 144px;
+    height: 45px;
+    color: #ffffff;
+    border-radius: 5px;
+    position: relative;
+    float: right;
+}
+
+#hisunim .continue {
+    background-color: #ffffff;
+    border: none;
+    width: 144px;
+    height: 45px;
+    color: #000000;
+    border-radius: 5px;
+}
+
+#hisunim .backMenu {
+    background-color: #616161;
+    border: none;
+    width: 144px;
+    height: 45px;
+    color: #ffffff;
+    border-radius: 5px;
+    position: relative;
+    float: right;
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0px; opacity: 1}
+}
+
+/* ---------------------------- END OF LIGHT BOX -------------------------- */
 
 @media (max-width: 992px){
     .navbar {
