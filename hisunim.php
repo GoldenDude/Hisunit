@@ -81,7 +81,7 @@
                     <input class="send" type = "submit" value = "שלח הזמנה">
                     <button class="sendArrow" type = "submit"><i class="fas fa-arrow-left"></i></button>
                 </form>           
-            
+                 
                 <input onsubmit="return delay(0)" id="sub" class="float-right" value="הוספת חיסון חדש"> 
                 <button class = "sendArrow" onsubmit id="sub2" ="return delay(0)"><i class="fas fa-plus"></i></button>
                 <div id="lightBox" class="lightBox">   
@@ -115,12 +115,29 @@
                                 
                                 <a href="index.html"><button class="backMenu">לתפריט הראשי</button></a>
                             </div>
-                        
+                        </form>
+                    </div>
+                </div>
+                <input onsubmit="return delay(0)" id="Delete" class="float-right" value="מחיקת חיסונים">
+                <div id="lightBoxDelete" class="lightBox">   
+                    <div class="lightBox-content">
+                        <div class="lightBox-header">
+                        <span class="close">&times;</span>
+                        <h2 class="text-right">הודעת מערכת</h2>
+                        </div>
+                        <form class="lightBox-body" name="deleteVaccine" action="#" method="GET" onsubmit="return validateForm()">
+                            <div class="lightBox-body">
+                                <p class="text-center">אישור מחיקה</p>
+                                <p class="text-center">?את עומדת לבצע מחיקה! היזהרי! האם את בטוחה</p>
+                            </div>
+                            <div class="lightBox-footer">
+                                <input class="continue" type = "submit" value="הוספה">
+                                <a href="index.html"><button class="backMenu">לתפריט הראשי</button></a>
+                            </div>
                         </form>
                     </div>
                 </div>
             </div>    
- 
         </main>
     </body>
 </html>
