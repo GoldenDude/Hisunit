@@ -79,9 +79,11 @@
                         </thead>
                     </table>
                     <input class="send" type = "submit" value = "שלח הזמנה">
+                    <button class="sendArrow" type = "submit"><i class="fas fa-arrow-left"></i></button>
                 </form>           
             
-                <input onsubmit="return delay(0)" id="sub" class="float-right" value="הוספת חיסון חדש">             
+                <input onsubmit="return delay(0)" id="sub" class="float-right" value="הוספת חיסון חדש"> 
+                <button onsubmit ="return delay(0)"><i class="fas fa-plus"></i></button>
                 <div id="lightBox" class="lightBox">   
                     <div class="lightBox-content">
                         <div class="lightBox-header">
@@ -95,10 +97,12 @@
                                 <input type="text" required class="inputSize mt-3 col-4  text-right form-control" placeholder="הכנס שם" name="name">
                                 <label class="mt-2 text-right">:שם החיסון</label>
                             </div>
+
                             <div class="input-group mb-3">
                                 <input  type="text" required class="inputSize mt-3 col-4  text-right form-control" placeholder="הכנס מספר סידורי" name="serial">
                                 <label class="mr-5 mt-2 text-right">:מספר סידורי</label>
                             </div>
+
                             <div class="input-group mb-3">
                                 <input type="text" class="inputSize mt-3 col-4  text-right form-control" placeholder="הכנס כמות" name="currentStock">
                                 <label class="mt-2 text-right">:מלאי</label>

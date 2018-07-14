@@ -493,6 +493,7 @@ header > section > form > ::-webkit-input-placeholder{
     border: none;
     position: fixed;
     bottom:5px;
+    left: 20px;
 }
 
 #hisunim .currentStock[innerHTML = "300"]{
@@ -511,7 +512,7 @@ header > section > form > ::-webkit-input-placeholder{
     border-radius: 5px;
     position: fixed;
     bottom:5px;
-    right:10%;
+    right:20px;
 }
 
 #hisunim .lightBox {
@@ -587,6 +588,11 @@ header > section > form > ::-webkit-input-placeholder{
     position: relative;
     float: right;
 }
+
+#hisunim .sendArrow{
+    display: none;
+}
+
 
 
 /*-----------------Confirm---------------*/
@@ -702,7 +708,7 @@ header > section > form > ::-webkit-input-placeholder{
     border-radius: 5px;
     position: fixed;
     bottom: 5px;
-    right:10%;
+    right:20px;
 }
 
 .fas.fa-trash{
@@ -710,6 +716,11 @@ header > section > form > ::-webkit-input-placeholder{
     border: none;
     background-color: #ffffff;
 }
+
+#hisunim .fa-plus{
+    display: none;
+}
+
 .red {color: #bd362f}
 .yellow {color: #ffc40d}
 .green {color: #46a546}
@@ -735,6 +746,41 @@ header > section > form > ::-webkit-input-placeholder{
     #print{
         display: none;
     }
+}
 
+
+@media (max-width: 1260px){
+
+    .fa-arrow-left{
+        font-size: 40px;
+        color: #62c462;
+        border: none;
+        position: fixed;
+        bottom:5px;
+        left: 20px;
+    }
+
+    #hisunim .sendArrow{
+        display: block;
+    }
+
+    #hisunim .fa-plus{
+        color: #555555;
+        border: none;
+        text-align: center;
+        position: fixed;
+        bottom:5px;
+        right: 20px;
+        font-size: 40px;
+        display: block;
+    }
+
+    #hisunim #sub{
+        display: none;
+    }
+
+    input[class = send]{
+        display: none;
+    }
 
 }
