@@ -15,7 +15,7 @@ window.addEventListener('load', function(){
                     var table_row = $(
                         '<tr class = "marked">' + 
                         '<td>' + "<i class = 'fas fa-times-circle'></i> " + '</td>' +
-                        '<td class = "bold">' + row.treatment.t1 + ", " + row.treatment.t2 + '</td>' +
+                        '<td class = "toHide bold">' + row.treatment.t1 + ", " + row.treatment.t2 + '</td>' +
                         '<td class = "bold">' + row.age + '</td>' +
                         '<td class = "bold">' + row.name + '</td>' +
                         '<td class = "bold">' + row.hour + '</td>' +
@@ -30,7 +30,7 @@ window.addEventListener('load', function(){
                         var table_row = $(
                             '<tr class = "marked">' + 
                             '<td>' + "<i class = 'fas fa-times-circle'></i> " + '</td>' +
-                            '<td>' + row.treatment.t1 + ", " + row.treatment.t2 + '</td>' +
+                            '<td class = "toHide">' + row.treatment.t1 + ", " + row.treatment.t2 + '</td>' +
                             '<td>' + row.age + '</td>' +
                             '<td>' + row.name + '</td>' +
                             '<td>' + row.hour + '</td>' +
@@ -43,7 +43,7 @@ window.addEventListener('load', function(){
                         var table_row = $(
                             '<tr>' + 
                             '<td>' + "<i class = 'fas fa-check-circle'></i> " + '</td>' +
-                            '<td>' + row.treatment.t1 + ", " + row.treatment.t2 + '</td>' +
+                            '<td class = "toHide">' + row.treatment.t1 + ", " + row.treatment.t2 + '</td>' +
                             '<td>' + row.age + '</td>' +
                             '<td>' + row.name + '</td>' +
                             '<td>' + row.hour + '</td>' +
@@ -60,7 +60,7 @@ window.addEventListener('load', function(){
                     var table_row = $(
                         '<tr>' + 
                         '<td>' + "<i class = 'fas fa-times-circle'></i> " + '</td>' +
-                        '<td class = "bold">' + row.treatment.t1 + ", " + row.treatment.t2 + '</td>' +
+                        '<td class = "toHide bold">' + row.treatment.t1 + ", " + row.treatment.t2 + '</td>' +
                         '<td class = "bold">' + row.age + '</td>' +
                         '<td class = "bold">' + row.name + '</td>' +
                         '<td class = "bold">' + row.hour + '</td>' +
@@ -75,7 +75,7 @@ window.addEventListener('load', function(){
                     var table_row = $(
                     '<tr>' +
                     '<td>' + " <i class = 'fas fa-check-circle'></i> " + '</td>' +
-                    '<td>' + row.treatment.t1 + ", " + row.treatment.t2 + '</td>' +
+                    '<td class = "toHide">' + row.treatment.t1 + ", " + row.treatment.t2 + '</td>' +
                     '<td>' + row.age + '</td>' +
                     '<td>' + row.name + '</td>' +
                     '<td>' + row.hour + '</td>' +

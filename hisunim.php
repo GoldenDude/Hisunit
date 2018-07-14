@@ -64,16 +64,17 @@
         <main>
 		    <div id = "hisunim" class = "container">
                 <h1>ניהול מלאי חיסונים - כללית למטייל, רחובות</h1>        
-                <form action = "confirm.php" name = "Order" method = "GET">
+                <form action = "confirm.php" name = "Order" method = "GET" onsubmit = "return ValidationEvent(this);">
                     <table class = "table">
                         <thead id = "test">
                             <tr>
-                                <th scope = "col">הערות</th>
+                                <th class = "toHide" scope = "col">הערות</th>
                                 <th scope = "col">נבחר</th>
                                 <th scope = "col">מלאי מומלץ</th>
                                 <th scope = "col">מלאי נוכחי</th>
                                 <th scope = "col">שם החיסון</th>
                                 <th scope = "col">מספר סידורי</th>
+                                <th scope = "col"></th>
                             </tr>
                         </thead>
                     </table>
@@ -114,7 +115,8 @@
                         </form>
                     </div>
                 </div>
-            </div>      
+            </div>    
+ 
         </main>
     </body>
 </html>

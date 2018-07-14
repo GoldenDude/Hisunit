@@ -15,23 +15,21 @@
 	   //output data from each row
 	   
 	   if($counter % 2){
-			echo '<tr class = "marked">';
-			echo '<td></td><td><input type = "checkbox" value = "' . $row["name"] .'" name = "toOrder[]"></td>';   
-			echo  '<td>' .$row["recommendedStock"]. '</td>' . '<td class = "currentStock" data-color = '. $row["currentStock"]. '>' . $row["currentStock"]. '</td>'.
-	   		'<td>'. $row["name"] . '</td>'. '<td>'. $row["serial"]. '</td></tr>';
+		echo "<tr class = 'marked'><td class = 'toHide'></td><td><input type = 'checkbox' name = 'toOrder[]' value = '{$row['name']}'></td>   
+		<td> {$row['recommendedStock']}</td><td class = 'currentStock' data-color = '{$row['currentStock']}'>{$row['currentStock']}</td>
+		<td>{$row['name']}</td><td>{$row['serial']}</td><td><button class = 'fas fa-trash' value = {$row['serial']}></button></td></tr>";
 	   }
 
 	   else {
-			echo '<tr>';
-			echo '<td></td><td><input type = "checkbox" value = "' . $row["name"] .'" name = "toOrder[]"></td>';   
-			echo  '<td>' .$row["recommendedStock"]. '</td>' . '<td class = "currentStock" data-color = '. $row["currentStock"]. '>' . $row["currentStock"]. '</td>'.
-			'<td>'. $row["name"] . '</td>'. '<td>'. $row["serial"]. '</td></tr>';
+		echo "<tr><td class = 'toHide'></td><td><input type = 'checkbox' name = 'toOrder[]' value = '{$row['name']}'></td>   
+		<td> {$row['recommendedStock']}</td><td class = 'currentStock' data-color = '{$row['currentStock']}'>{$row['currentStock']}</td>
+		<td>{$row['name']}</td><td>{$row['serial']}</td><td><button class = 'fas fa-trash' value = {$row['serial']}></button></td></tr>";
 	   }
 		 
 		++$counter;
 
 	}
-	
+
 	echo '</tbody>';
 
 	//release returned data

@@ -39,3 +39,16 @@ function setColors() {
 
 }
 
+function ValidationEvent(form){
+
+    var tmp = false;
+    for (var i in form.elements) {
+      var el = form.elements[i];
+  
+      if (el.type == 'checkbox' && el.checked) tmp = true;
+    }
+    return tmp;
+
+
+}
+

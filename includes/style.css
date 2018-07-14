@@ -3,6 +3,9 @@
 header, aside, article, section, footer, main{
     display: block;
 }
+.bold{
+    font-weight: bold;
+}
 
 .clear{
     clear: both;
@@ -28,7 +31,7 @@ body > header > section > h5{
 .navbar{
     position: relative;
     bottom: 69px;
-    width: 100%;
+    width: 100%;    
     height: 52px;
     background-color: #62c462;
     z-index: 1;
@@ -702,7 +705,36 @@ header > section > form > ::-webkit-input-placeholder{
     right:10%;
 }
 
-
+.fas.fa-trash{
+    color: #ff0000;
+    border: none;
+    background-color: #ffffff;
+}
 .red {color: #bd362f}
 .yellow {color: #ffc40d}
 .green {color: #46a546}
+
+@media (max-width: 992px){
+    .navbar {
+        position: relative;
+        bottom: 69px;
+        width: 100%;
+        height: 100%;
+        background-color: #62c462;
+        z-index: 1;
+    }
+
+    .breadcrumb-item{
+        display: none;
+    }
+
+    .toHide{
+        display: none;
+    }
+
+    #print{
+        display: none;
+    }
+
+
+}

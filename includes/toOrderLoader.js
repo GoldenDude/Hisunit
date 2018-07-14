@@ -3,7 +3,6 @@ window.addEventListener('load', function() {
     var urlParams = new URLSearchParams(window.location.search);
     var datastring = urlParams.getAll('toOrder[]');
     
-    
     $.ajax({
         type: "POST",
         url: "confirmDataBaseLoader.php",
@@ -17,4 +16,5 @@ window.addEventListener('load', function() {
     return false;
 
 });
+
 
