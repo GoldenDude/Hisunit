@@ -4,7 +4,6 @@ window.addEventListener('load', function(){
     var notTreatedFound = 0;
 
     $.getJSON("data/patients.json", function (data) {
-        console.log(data);
         json_data = data;
         for (var row of data) {
             
@@ -15,8 +14,8 @@ window.addEventListener('load', function(){
                     var table_row = $(
                         '<tr class = "marked">' + 
                         '<td>' + "<i class = 'fas fa-times-circle'></i> " + '</td>' +
-                        '<td class = "toHide bold">' + row.treatment.t1 + ", " + row.treatment.t2 + '</td>' +
-                        '<td class = "bold">' + row.age + '</td>' +
+                        '<td class = "bold">' + row.treatment.t1 + ", " + row.treatment.t2 + '</td>' +
+                        '<td class = "toHide bold">' + row.age + '</td>' +
                         '<td class = "bold">' + row.name + '</td>' +
                         '<td class = "bold">' + row.hour + '</td>' +
                         '</tr>' 
@@ -30,8 +29,8 @@ window.addEventListener('load', function(){
                         var table_row = $(
                             '<tr class = "marked">' + 
                             '<td>' + "<i class = 'fas fa-times-circle'></i> " + '</td>' +
-                            '<td class = "toHide">' + row.treatment.t1 + ", " + row.treatment.t2 + '</td>' +
-                            '<td>' + row.age + '</td>' +
+                            '<td>' + row.treatment.t1 + ", " + row.treatment.t2 + '</td>' +
+                            '<td class = "toHide">' + row.age + '</td>' +
                             '<td>' + row.name + '</td>' +
                             '<td>' + row.hour + '</td>' +
                             '</tr>' 
@@ -43,8 +42,8 @@ window.addEventListener('load', function(){
                         var table_row = $(
                             '<tr>' + 
                             '<td>' + "<i class = 'fas fa-check-circle'></i> " + '</td>' +
-                            '<td class = "toHide">' + row.treatment.t1 + ", " + row.treatment.t2 + '</td>' +
-                            '<td>' + row.age + '</td>' +
+                            '<td>' + row.treatment.t1 + ", " + row.treatment.t2 + '</td>' +
+                            '<td class = "toHide">' + row.age + '</td>' +
                             '<td>' + row.name + '</td>' +
                             '<td>' + row.hour + '</td>' +
                             '</tr>' 
@@ -60,8 +59,8 @@ window.addEventListener('load', function(){
                     var table_row = $(
                         '<tr>' + 
                         '<td>' + "<i class = 'fas fa-times-circle'></i> " + '</td>' +
-                        '<td class = "toHide bold">' + row.treatment.t1 + ", " + row.treatment.t2 + '</td>' +
-                        '<td class = "bold">' + row.age + '</td>' +
+                        '<td class = "bold">' + row.treatment.t1 + ", " + row.treatment.t2 + '</td>' +
+                        '<td class = "toHide bold">' + row.age + '</td>' +
                         '<td class = "bold">' + row.name + '</td>' +
                         '<td class = "bold">' + row.hour + '</td>' +
                         '</tr>' 
@@ -75,8 +74,8 @@ window.addEventListener('load', function(){
                     var table_row = $(
                     '<tr>' +
                     '<td>' + " <i class = 'fas fa-check-circle'></i> " + '</td>' +
-                    '<td class = "toHide">' + row.treatment.t1 + ", " + row.treatment.t2 + '</td>' +
-                    '<td>' + row.age + '</td>' +
+                    '<td>' + row.treatment.t1 + ", " + row.treatment.t2 + '</td>' +
+                    '<td class = "toHide">' + row.age + '</td>' +
                     '<td>' + row.name + '</td>' +
                     '<td>' + row.hour + '</td>' +
                     '</tr>'
