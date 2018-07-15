@@ -45,10 +45,13 @@ function ValidationEvent(form){
     for (var i in form.elements) {
       var el = form.elements[i];
   
-      if (el.type == 'checkbox' && el.checked) tmp = true;
+      if (el.type == 'checkbox' && el.checked){
+        var check = parseInt(form.elements[i].getAttribute("stock"));
+        if (check)
+            tmp = true;
+      }
     }
+
     return tmp;
-
-
 }
 

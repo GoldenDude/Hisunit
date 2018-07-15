@@ -27,9 +27,8 @@ function deleteVac(){
 
     datastring = datastring.substring(0,datastring.length-2);
     datastring = datastring.substring(1,datastring.length);
-    // console.log(datastring);
+    
     var sent = 'toDelete=' + datastring;
-    console.log(sent);
    
     $.ajax({
         type: "POST",

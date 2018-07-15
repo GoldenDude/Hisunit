@@ -247,7 +247,7 @@ header > section > form > ::-webkit-input-placeholder{
 
 /* ------------------Tipul------------------- */
 
-#tipul main > h1{
+#tipul h1{
     font-size: 24px;
     position: relative;
     margin: 0px auto;
@@ -255,7 +255,7 @@ header > section > form > ::-webkit-input-placeholder{
     font-weight: bold;
 }
 
-#tipul main > h5{
+#tipul h5{
     font-size: 16px;
     font-weight: bold;
 }
@@ -324,6 +324,9 @@ header > section > form > ::-webkit-input-placeholder{
     position: fixed;
     bottom:5px;
     right: 10%;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px;
 }
 
 #tipul .container{
@@ -336,11 +339,6 @@ header > section > form > ::-webkit-input-placeholder{
 #tipul .right {
     position: relative;
     left:400px;
-}
-
-#tipul .input-group{
-    width: 570px;
-    margin: 0px;
 }
 
 /* hisunim List */
@@ -458,7 +456,7 @@ header > section > form > ::-webkit-input-placeholder{
     bottom: 100px;
 }
 
-#confirm main > h1{
+#confirm h1{
     font-size: 42px;
     position: relative;
     width: 450px;
@@ -469,7 +467,7 @@ header > section > form > ::-webkit-input-placeholder{
     padding-top: 10px;
 }
 
-#confirm main > h5 {
+#confirm h5 {
     font-size: 16px;
     position: relative;
     bottom: 100px;
@@ -477,7 +475,7 @@ header > section > form > ::-webkit-input-placeholder{
     padding-top: 10px;
 }
 
-#confirm main > h2 {
+#confirm h2 {
     font-size: 24px;
     position: relative;
     bottom: 100px;
@@ -486,7 +484,7 @@ header > section > form > ::-webkit-input-placeholder{
     padding-top: 10px;
 }
 
-#confirm main > h4{
+#confirm h4{
     font-size: 25px;
     position: relative;
     bottom: 100px;
@@ -494,7 +492,7 @@ header > section > form > ::-webkit-input-placeholder{
     padding-top: 10px;
 }
 
-#confirm main > h3{
+#confirm h3{
     font-size: 18px;
     position: relative;
     bottom: 100px;
@@ -611,6 +609,7 @@ header > section > form > ::-webkit-input-placeholder{
     background-color: #5cb85c;
     color: white;
     width: 100%;
+    min-height: 49px;
 }
 
 
@@ -624,10 +623,6 @@ header > section > form > ::-webkit-input-placeholder{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     animation-name: animatetop;
     animation-duration: 0.4s
-}
-
-.input-group{
-    padding-left: 40%;
 }
 
 .close {
@@ -651,6 +646,11 @@ header > section > form > ::-webkit-input-placeholder{
     height: 45px;
     color: #000000;
     border-radius: 5px;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px;
+    float: left;
 }
 
 #tipul .backMenu {
@@ -659,9 +659,21 @@ header > section > form > ::-webkit-input-placeholder{
     width: 144px;
     height: 45px;
     color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px;
     border-radius: 5px;
     position: relative;
     float: right;
+}
+
+#tipul .input-group{
+    width: 570px;
+    margin: 0px;
+}
+
+#hisunim .input-group{
+    padding-left: 40%;
 }
 
 #hisunim .continue {
@@ -676,6 +688,9 @@ header > section > form > ::-webkit-input-placeholder{
 #hisunim .backMenu {
     background-color: #616161;
     border: none;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px;
     width: 144px;
     height: 45px;
     color: #ffffff;

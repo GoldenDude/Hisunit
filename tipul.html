@@ -21,9 +21,9 @@
     <body>
         <header>
             <section>
-                <section id = "user"></section>
+                <article id = "user"></article>
                 <h5>איריס היימן</h5>
-                <a id = "logo" href = "index.html"></a>     
+                <a id = "logo" href = "#"></a>  
             </section>
             
             <div id = "clock"></div>
@@ -32,7 +32,7 @@
            
             <nav class="navbar navbar-expand-lg ">
                     
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
                       <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
                     </button>
                   
@@ -48,9 +48,9 @@
                           <a id="selected" class="nav-link" href="index.html">לוח זמנים יומי</a>
                         </li>
                       </ul>
-                      <form class="form-inline my-lg-0">
+                      <form class="form-inline my-lg-0" method="GET">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">חיפוש</button>
-                        <input class="ml-1 form-control mr-sm-2 text-right" type="search" placeholder="...חיפוש" aria-label="Search">
+                        <input class="ml-1 form-control mr-sm-2 text-right" type="search" placeholder="...חיפוש">
                       </form>
                     </div>
                   </nav>
@@ -66,9 +66,9 @@
             <div class = "clear"></div>
         </header>
 
-        <div id="tipul" class = "container">
-             <main>
-                <h1 class="text-center"></h1>        
+        <main>
+            <div id="tipul" class = "container">
+                <h1 class="text-center">פרטי טיפול</h1>        
                 <h5 class="text-right">פרטי המטופל</h5>
                 <br>
                 <table class="table">
@@ -117,14 +117,14 @@
                     <h4 class="mr-5 mt-4 text-right">פרטי הטיפול</h4>
                     <form name="vaccineForm" method="GET" onsubmit="return delay(0)">
                         <div class="right input-group mb-3">
-                            <input type="text" required class="Right inputSize mt-3 col-4  text-right form-control" placeholder="...סרוק/י ברקוד" aria-label="...סרוק/י ברקוד" aria-describedby="basic-addon2">
+                            <input type="text" required class="Right inputSize mt-3 col-4  text-right form-control" placeholder="...סרוק/י ברקוד">
                                 <div class="input-group-append">
                                     <i class="pt-3 mr-5 ml-3 fas fa-barcode fa-2x"></i>
                                 </div>
                             <label class="mt-2 text-right"></label>
                         </div>
                         <div class="right input-group mb-3">
-                            <input type="text" required class="inputSize mt-3 col-4  text-right form-control" placeholder="...סרוק/י ברקוד" aria-label="...סרוק/י ברקוד" aria-describedby="basic-addon2">
+                            <input type="text" required class="inputSize mt-3 col-4  text-right form-control" placeholder="...סרוק/י ברקוד">
                                 <div class="input-group-append">
                                     <i class="pt-3 mr-5 ml-3 fas fa-barcode fa-2x"></i>
                                 </div>
@@ -133,7 +133,7 @@
                         <p id="add" class="mr-5 mt-3 text-right">הוסף חיסון נוסף &#10010;</p>
                         <h3 class="mr-5 text-right">המלצת המערכת</h3>
                         <div class="right input-group mb-3">
-                            <input type="text" class="inputSize mt-3 col-4  text-right form-control" placeholder="...סרוק/י ברקוד" aria-label="...סרוק/י ברקוד" aria-describedby="basic-addon2">
+                            <input type="text" class="inputSize mt-3 col-4  text-right form-control" placeholder="...סרוק/י ברקוד">
                                 <div class="input-group-append">
                                     <i class="pt-3 mr-5 ml-3 fas fa-barcode fa-2x"></i>
                                 </div>
@@ -141,7 +141,7 @@
                         </div>
                         <input type="submit" id="sub" class="submit" value="סיים טיפול">
                     </form>
-                    <a href="index.html" ><button class="back float-right">חזור</button></a>
+                    <a href="index.html" class="back float-right">חזור</a>
 
                         <div id="lightBox" class="lightBox">   
                             <div class="lightBox-content">
@@ -154,13 +154,13 @@
                                         <p class="text-center">שימי לב!, מספר החיסונים של "אי-קולי" הולך ואוזל (נותרו 10 מנות), על מנת לעבור ל"ניהול מלאי" לחצי על המשך</p>
                                     </div>
                                     <div class="lightBox-footer">
-                                        <a  href="hisunim.php"><button class="continue">המשך</button></a>
-                                        <a href="index.html"><button class="backMenu">לתפריט הראשי</button></a>
+                                        <a class="continue" href="hisunim.php">המשך</a>
+                                        <a href="index.html" class="backMenu">לתפריט הראשי</a>
                                     </div>
                             </div>
                          </div>         
-            </main>
-
-        </div>        
+                         
+                </div>        
+        </main>
     </body>
 </html>

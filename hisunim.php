@@ -21,9 +21,9 @@
     <body>
         <header>
             <section>
-                <section id = "user"></section>
+                <article id = "user"></article>
                 <h5>איריס היימן</h5>
-                <a id = "logo" href = "#"></a>
+                <a id = "logo" href = "#"></a>  
             </section>
 
             <div id = "clock"></div>
@@ -32,7 +32,7 @@
             
             <nav class="navbar navbar-expand-lg ">
                     
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
                       <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
                     </button>
                   
@@ -48,9 +48,9 @@
                           <a  class="nav-link" href="index.html">לוח זמנים יומי</a>
                         </li>
                       </ul>
-                      <form class="form-inline my-lg-0">
+                      <form class="form-inline my-lg-0" method = "GET">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">חיפוש</button>
-                        <input class="ml-1 form-control mr-sm-2 text-right" type="search" placeholder="...חיפוש" aria-label="Search">
+                        <input class="ml-1 form-control mr-sm-2 text-right" type="search" placeholder="...חיפוש">
                       </form>
                     </div>
                   </nav>
@@ -97,15 +97,15 @@
                                 </div>
                                 <div class="lightBox-footer alertLightBox">
                                     <button  class="continue" id = "toDelete">מחיקה</button>
-                                    <a href="hisunim.php"><button class="backMenu">ביטול</button></a>
+                                    <a href="hisunim.php" class="backMenu">ביטול</a>
                                 </div>
                         </div>
                     </div>
                 </form>
 
-                <input onsubmit="return delay(0)" id="Delete" class="float-right" value="מחיקת חיסונים">
+                <input type = "button" onsubmit="return delay(0)" id="Delete" class="float-right" value="מחיקת חיסונים">
                 <button onsubmit="return delay(0)" id="Delete2" class="float-right"><i class = "fas fa-trash"></i></button>
-                <input onsubmit="return delay(0)" id="sub" class="float-right" value="הוספת חיסון חדש"> 
+                <input type = "button" onsubmit="return delay(0)" id="sub" class="float-right" value="הוספת חיסון חדש"> 
                 <button class = "sendArrow" id="sub2" onsubmit ="return delay(0)"><i class="fas fa-plus"></i></button>
                 <div id="lightBox" class="lightBox">   
                     <div class="lightBox-content">
@@ -134,8 +134,7 @@
                     
                             <div class="lightBox-footer">
                                 <input class="continue" type = "submit" value="הוספה">
-                                
-                                <a href="hisunim.php"><button class="backMenu">ביטול</button></a>
+                                <a href="hisunim.php" class="backMenu">ביטול</a>
                             </div>
                         </form>
                     </div>

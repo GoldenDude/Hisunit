@@ -18,72 +18,72 @@
     </head>
  
     <body>
-            <header>
-                <section>
-                    <section id = "user"></section>
-                    <h5>איריס היימן</h5>
-                    <a id = "logo" href = "#"></a>    
-                </section>
+        <header>
+            <section>
+                <article id = "user"></article>
+                <h5>איריס היימן</h5>
+                <a id = "logo" href = "#"></a>  
+            </section>
 
-                <div id = "clock"></div>
-                <div id = "date"></div>
-                <div id = "currDay"></div>
+            <div id = "clock"></div>
+            <div id = "date"></div>
+            <div id = "currDay"></div>
 
-                <nav class="navbar navbar-expand-lg ">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-                        </button>
-                      
-                        <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
-                          <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a id="selected" class="nav-link" href="hisunim.php"> ניהול מלאי חיסונים<span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item active">
-                              <a class="nav-link" href="#"> ניהול פנקס מטופל <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                              <a  class="nav-link" href="index.html">לוח זמנים יומי</a>
-                            </li>
-                          </ul>
-                          <form class="form-inline my-lg-0">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">חיפוש</button>
-                            <input class="ml-1 form-control mr-sm-2 text-right" type="search" placeholder="...חיפוש" aria-label="Search">
-                          </form>
-                        </div>
-                      </nav>
-    
-                <ol class = "breadcrumb breadcrumb-left-arrow">
-                    <li id = "currentPage" class = "breadcrumb-item">אישור הזמנה</li>
-                    <li class = "breadcrumb-item"><a href = "hisunim.html">ניהול מלאי חיסונים</a></li>
-                </ol>
-    
-                <div class = "clear"></div>
-            </header>
-
-            <div id="confirm" class = "container">
-                <main >
-                    <img class="checkButton" src="images/check-button.svg" alt="check-button">
-                    <h1>!הזמנה נשלחה בהצלחה</h1>
-                    <h5>.ההזמנה בוצעה ונשלחה לספק החיסונים בהצלחה. ההזמנה תימסר תוך 2 ימי עבודה לכללית למטייל, רחוב ביל"ו 1, רחובות</h5>
-                    <h2>95784 :הזמנה מספר</h2>
-                    <h4 id = "date2"></h4>
-
-                    <table class = "table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">כמות</th>
-                                    <th scope="col">מספר סידורי</th>
-                                    <th scope="col">שם פריט</th>
-                                </tr>
-                            </thead>
-                    </table>
+            <nav class="navbar navbar-expand-lg ">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                    </button>
                     
-                    <form action="index.html" method="GET">
-                        <input type="submit" id="sub" class="submit" value="המשך">
-                    </form>    
-                        <button id="print" class="back float-right">שלח להדפסה</button>
-                </main>
+                    <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a id="selected" class="nav-link" href="hisunim.php"> ניהול מלאי חיסונים<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"> ניהול פנקס מטופל <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a  class="nav-link" href="index.html">לוח זמנים יומי</a>
+                        </li>
+                        </ul>
+                        <form class="form-inline my-lg-0" method = "GET">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">חיפוש</button>
+                        <input class="ml-1 form-control mr-sm-2 text-right" type="search" placeholder="...חיפוש">
+                        </form>
+                    </div>
+                    </nav>
+
+            <ol class = "breadcrumb breadcrumb-left-arrow">
+                <li id = "currentPage" class = "breadcrumb-item">אישור הזמנה</li>
+                <li class = "breadcrumb-item"><a href = "hisunim.html">ניהול מלאי חיסונים</a></li>
+            </ol>
+
+            <div class = "clear"></div>
+        </header>
+
+        <main>
+            <div id="confirm" class = "container">
+                <img class="checkButton" src="images/check-button.svg" alt="check-button">
+                <h1>!הזמנה נשלחה בהצלחה</h1>
+                <h5>.ההזמנה בוצעה ונשלחה לספק החיסונים בהצלחה. ההזמנה תימסר תוך 2 ימי עבודה לכללית למטייל, רחוב ביל"ו 1, רחובות</h5>
+                <h2>95784 :הזמנה מספר</h2>
+                <h4 id = "date2">יום</h4>
+
+                <table class = "table">
+                        <thead>
+                            <tr>
+                                <th scope="col">כמות</th>
+                                <th scope="col">מספר סידורי</th>
+                                <th scope="col">שם פריט</th>
+                            </tr>
+                        </thead>
+                </table>
+                
+                <form action="index.html" method="GET">
+                    <input type="submit" id="sub" class="submit" value="המשך">
+                </form>    
+                    <button id="print" class="back float-right">שלח להדפסה</button>
             </div>
+        </main>
     </body>
-    
+</html>
