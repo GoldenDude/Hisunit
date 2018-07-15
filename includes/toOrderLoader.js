@@ -7,7 +7,7 @@ window.addEventListener('load', function() {
         type: "POST",
         url: "confirmDataBaseLoader.php",
         data: {toOrder: datastring, length: datastring.length},
-        cache: true,
+        cache: false,
         success: function(html){
             $("thead").after(html);
         },

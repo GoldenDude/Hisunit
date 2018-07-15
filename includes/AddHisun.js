@@ -9,8 +9,9 @@ function validateForm(){
             type: "POST",
             url: "AddNewHisun.php",
             data: dataString,
-            cache: true,
+            cache: false,
         });
-    
+
+    location.reload(true);
     return true;
 }

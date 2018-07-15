@@ -33,8 +33,10 @@ function deleteVac(){
     $.ajax({
         type: "POST",
         url: "deleteHisunim.php",
-        data: sent
+        data: sent,
+        cache: false
     });
-    
+
+    location.reload(true);
     return true;
 }

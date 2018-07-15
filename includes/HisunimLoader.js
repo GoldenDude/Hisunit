@@ -3,7 +3,7 @@ window.addEventListener('load', function() {
     $.ajax({
         type: "GET",
         url: "HisunimDataBaseLoader.php",
-        cache: true,
+        cache: false,
         success: function(html){
             $("thead").after(html);
         },
@@ -34,7 +34,7 @@ function setColors() {
         if (check > 200)
             elements[0].className = "green";
     }
-    
+
     return true;    
 
 }
