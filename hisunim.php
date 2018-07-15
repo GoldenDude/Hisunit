@@ -113,22 +113,21 @@
                             <span class="close">&times;</span>
                             <h2 class="text-right">הודעת מערכת</h2>
                         </div>
-                        
                         <p class="text-center">:הזנת חיסון חדש למערכת</p>
                         <form class="lightBox-body" name="addVaccine" action="#" method="POST" onsubmit="return validateForm()">
                             <div class="input-group mb-3">
                                 <input type="text" required class="inputSize mt-3 col-4  text-right form-control" placeholder="הכנס שם" name="name">
-                                <label class="mt-2 text-right">:שם החיסון</label>
+                                <label class="mt-4 text-right">:שם החיסון</label>
                             </div>
 
                             <div class="input-group mb-3">
                                 <input  type="text" required class="inputSize mt-3 col-4  text-right form-control" placeholder="הכנס מספר סידורי" name="serial">
-                                <label class="mr-5 mt-2 text-right">:מספר סידורי</label>
+                                <label class="mt-4 text-right">:מספר סידורי</label>
                             </div>
 
                             <div class="input-group mb-3">
                                 <input type="text" class="inputSize mt-3 col-4  text-right form-control" placeholder="הכנס כמות" name="currentStock">
-                                <label class="mt-2 text-right">:מלאי</label>
+                                <label class="mt-4 text-right">:מלאי</label>
                             </div>
 
                             <p class="text-center"></p>
@@ -136,7 +135,7 @@
                             <div class="lightBox-footer">
                                 <input class="continue" type = "submit" value="הוספה">
                                 
-                                <a href="index.html"><button class="backMenu">לתפריט הראשי</button></a>
+                                <a href="hisunim.php"><button class="backMenu">ביטול</button></a>
                             </div>
                         </form>
                     </div>

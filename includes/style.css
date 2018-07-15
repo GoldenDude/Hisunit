@@ -626,6 +626,10 @@ header > section > form > ::-webkit-input-placeholder{
     animation-duration: 0.4s
 }
 
+.input-group{
+    padding-left: 40%;
+}
+
 .close {
     color: #aaa;
     float: right;
