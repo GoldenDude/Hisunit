@@ -23,7 +23,7 @@
             <section>
                 <article id = "user"></article>
                 <h5>איריס היימן</h5>
-                <a id = "logo" href = "#"></a>  
+                <a id = "logo" href = "index.html"></a>  
             </section>
 
             <div id = "clock"></div>
@@ -39,7 +39,7 @@
                     <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
                       <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a id="selected" class="nav-link" href="hisunim.php"> ניהול מלאי חיסונים<span class="sr-only">(current)</span></a>
+                            <a id="selected" class="nav-link" href="#"> ניהול מלאי חיסונים<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
                           <a class="nav-link" href="#"> ניהול פנקס מטופל <span class="sr-only">(current)</span></a>

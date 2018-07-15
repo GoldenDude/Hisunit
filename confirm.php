@@ -22,7 +22,7 @@
             <section>
                 <article id = "user"></article>
                 <h5>איריס היימן</h5>
-                <a id = "logo" href = "#"></a>  
+                <a id = "logo" href = "index.html"></a>  
             </section>
 
             <div id = "clock"></div>
